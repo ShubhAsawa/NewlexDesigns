@@ -65,46 +65,47 @@
 // }
 
 
+// src/components/PreLoaderCircle.jsx
 import { useEffect, useState } from "react";
 
-export default function PreLoader({ onFinish }) {
+export default function PreLoaderCircle({ onFinish }) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setFadeOut(true);
       setTimeout(() => onFinish(), 700);
-    }, 4000); // 4s scan effect
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [onFinish]);
 
   return (
     <div
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-black z-50 overflow-hidden transition-opacity duration-700 ${
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-[#0f0f0f] z-50 transition-opacity duration-700 ${
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
-      {/* Animated scanning lines */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-purple-600/10 to-transparent animate-[scan_2s_linear_infinite]" />
-      </div>
-
-      {/* Logo with glow */}
       <img
         src="/Preloader.png"
-        alt="NewlexDesigns Logo"
-        className="w-64 h-auto animate-pulse drop-shadow-[0_0_20px_rgba(168,85,247,0.8)]"
+        alt="Logo"
+        className="w-72 h-auto mb-10 drop-shadow-glow animate-pulse-slow"
       />
 
-      <style>
-        {`
-          @keyframes scan {
-            0% { transform: translateY(-100%); }
-            100% { transform: translateY(100%); }
-          }
-        `}
-      </style>
+      <div className="w-24 h-24 border-4 border-purple-500 border-t-transparent rounded-full animate-spin" />
+
+      <p className="text-gray-400 uppercase tracking-widest text-sm mt-6 animate-pulse-slow">
+        Loading...
+      </p>
+
+      <style>{`
+        .drop-shadow-glow { filter: drop-shadow(0 0 20px #9b5de5); }
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.4; }
+        }
+        .animate-pulse-slow { animation: pulse-slow 2s infinite; }
+      `}</style>
     </div>
   );
 }

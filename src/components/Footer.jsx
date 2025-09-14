@@ -106,7 +106,7 @@ const Footer = () => {
           <h4 className="text-white font-semibold mb-3">Connect With Us</h4>
           <div className="flex flex-wrap space-x-4 text-purple-400 text-xl">
             <a
-              href="https://www.linkedin.com/company/seyreon/"
+              href="https://www.linkedin.com/company/newlexdesigns/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
@@ -114,7 +114,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.instagram.com/seyreon/"
+              href="https://www.instagram.com/newlexdesigns/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
@@ -122,7 +122,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.facebook.com/seyreon"
+              href="https://www.facebook.com/newlexdesigns"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
@@ -130,7 +130,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://www.reddit.com/user/seyreon/"
+              href="https://www.reddit.com/user/newlexdesigns/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
@@ -138,7 +138,7 @@ const Footer = () => {
               <FaReddit />
             </a>
             <a
-              href="https://x.com/seyreon"
+              href="https://x.com/newlexdesigns"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
@@ -146,7 +146,7 @@ const Footer = () => {
               <FaTwitter />
             </a>
             <a
-              href="http://wa.me/+916398800516"
+              href="http://wa.me/+917017288428"
               target="_blank"
               rel="noreferrer"
               className="hover:text-green-400 transition"

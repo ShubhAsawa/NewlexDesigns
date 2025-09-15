@@ -70,14 +70,30 @@ import { useEffect, useState } from "react";
 
 export default function PreLoaderCircle({ onFinish }) {
   const [fadeOut, setFadeOut] = useState(false);
+  const [percent, setPercent] = useState(0);
 
   useEffect(() => {
+    // progress counter
+    const progressInterval = setInterval(() => {
+      setPercent((prev) => {
+        if (prev >= 100) {
+          clearInterval(progressInterval);
+          return 100;
+        }
+        return prev + 1;
+      });
+    }, 40); // speed of progress
+
+    // fade out after full load
     const timer = setTimeout(() => {
       setFadeOut(true);
       setTimeout(() => onFinish(), 700);
     }, 5000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearInterval(progressInterval);
+      clearTimeout(timer);
+    };
   }, [onFinish]);
 
   return (
@@ -86,13 +102,50 @@ export default function PreLoaderCircle({ onFinish }) {
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
+      {/* Logo */}
       <img
         src="/Preloader.png"
         alt="Logo"
         className="w-72 h-auto mb-10 drop-shadow-glow animate-pulse-slow"
       />
 
-      <div className="w-24 h-24 border-4 border-purple-500 border-t-transparent rounded-full animate-spin" />
+      {/* Futuristic Circular Loader */}
+      <div className="relative w-40 h-40 flex items-center justify-center">
+        <svg className="w-full h-full transform -rotate-90">
+          {/* Background Circle */}
+          <circle
+            cx="50%"
+            cy="50%"
+            r="70"
+            stroke="#333"
+            strokeWidth="8"
+            fill="none"
+          />
+          {/* Progress Circle */}
+          <circle
+            cx="50%"
+            cy="50%"
+            r="70"
+            stroke="#9b5de5"
+            strokeWidth="8"
+            fill="none"
+            strokeDasharray={`${2 * Math.PI * 70}`}
+            strokeDashoffset={`${
+              2 * Math.PI * 70 - (percent / 100) * (2 * Math.PI * 70)
+            }`}
+            strokeLinecap="round"
+            className="transition-all duration-200"
+          />
+        </svg>
+
+        {/* Percent Text */}
+        <div className="absolute text-center">
+          <p className="text-4xl font-bold text-white">{percent}</p>
+          <p className="text-xs tracking-widest text-gray-400 uppercase">
+            Percent
+          </p>
+        </div>
+      </div>
 
       <p className="text-gray-400 uppercase tracking-widest text-sm mt-6 animate-pulse-slow">
         Loading...

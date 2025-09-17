@@ -174,7 +174,8 @@ const Header = () => {
           {/* CTA */}
           <div className="hidden md:block">
             <NavLink to="/client-portal/login">
-              <button className="bg-[#94938f] text-white px-5 py-2 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#4a4743]">
+              <button className=" text-white px-5 py-2 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#4a4743]"
+               style={{ background: "linear-gradient(135deg, #530303ff, #560404ff)" }}>
                 Client Portal
               </button>
             </NavLink>

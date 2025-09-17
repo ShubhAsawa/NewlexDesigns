@@ -100,54 +100,176 @@
 
 // export default HeroSection;
 
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+
+// const API_URL =
+//   "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLjfTOkayP_UukrEIJEMGxbvkr6obP8sMlInlz9wKTHCXVeMnjIAN6jlbZDVnjvCJH-ChSwBiI2ZJ4iBqyfO_A58E7BzQE3vPmqfDjsx1WjFZeu4ret53q6jsSjxp_rOcgNREnZb6TOaf3Ki9X8UOABV0RVVs-9U_6ixPLbKq4IB5D_1zEcPGL04GBks35QQE52Bm79WC0lGvU0X2PVvGiRPjVO8CdQRskfR1RA6jt9QknWGH9R_ZWCA3SXQj8kEDUXM5igi945sF5hxUkGIx9lYVH5JIaW_CHUicwFq&lib=MuI5z9z_By3kS-EfJuAuFkGCHQy4BBFlN";
+
+// const HeroSection = () => {
+//   const [images, setImages] = useState({ row1: [], row2: [], row3: [] });
+
+//   useEffect(() => {
+//     fetch(API_URL)
+//       .then((res) => res.json())
+//       .then((data) => setImages(data))
+//       .catch((err) => console.error("Failed to fetch images:", err));
+//   }, []);
+
+//   return (
+//     <section className="relative flex flex-col lg:flex-row items-center justify-between px-12 pt-2 pb-4 bg-white text-black overflow-hidden hero-custom-height">
+
+//       {/* Left Content */}
+//       <div className="relative z-10 max-w-xl text-left space-y-7">
+//         <h1 className="text-4xl md:text-6xl font-bold">
+//           Your <em className="italic text-red-600">creative team’s</em><br /> creative team™
+//         </h1>
+
+//         <p className="text-lg text-black ">
+//           Scale your in-house creative team with top global talent powered by
+//           industry-leading AI workflows, delivering anything you can imagine fast
+//           and affordably.
+//         </p>
+
+//         <Link to="/contact">
+//           <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold shadow-lg transition duration-300">
+//             Book a demo
+//           </button>
+//         </Link>
+//       </div>
+
+//       {/* Right Side: Three Vertical Columns */}
+//       <div className="relative z-10 flex gap-4 mt-10 lg:mt-0">
+
+//         {/* Column 1 */}
+//         {images.row1.length > 0 && (
+//           <div className="overflow-hidden h-[400px] w-[160px]">
+//             <div className="flex flex-col animate-scrollUp">
+//               {[...images.row1, ...images.row1].map((img, idx) => (
+//                 <img
+//                   key={`col1-${idx}`}
+//                   src={img}
+//                   alt={`Hero Img ${idx + 1}`}
+//                   className="w-full h-36 object-cover rounded-md mb-3"
+//                 />
+//               ))}
+//             </div>
+//           </div>
+//         )}
+
+//         {/* Column 2 */}
+//         {images.row2.length > 0 && (
+//           <div className="overflow-hidden h-[400px] w-[160px]">
+//             <div className="flex flex-col animate-scrollDown">
+//               {[...images.row2, ...images.row2].map((img, idx) => (
+//                 <img
+//                   key={`col2-${idx}`}
+//                   src={img}
+//                   alt={`Hero Img ${idx + 1}`}
+//                   className="w-full h-36 object-cover rounded-md mb-3"
+//                 />
+//               ))}
+//             </div>
+//           </div>
+//         )}
+
+//         {/* Column 3 */}
+//         {images.row3.length > 0 && (
+//           <div className="overflow-hidden h-[400px] w-[160px]">
+//             <div className="flex flex-col animate-scrollUp">
+//               {[...images.row3, ...images.row3].map((img, idx) => (
+//                 <img
+//                   key={`col3-${idx}`}
+//                   src={img}
+//                   alt={`Hero Img ${idx + 1}`}
+//                   className="w-full h-36 object-cover rounded-md mb-3"
+//                 />
+//               ))}
+//             </div>
+//           </div>
+//         )}
+//       </div>
+
+//       {/* Animation Keyframes */}
+//       <style>
+//         {`
+//           @keyframes scrollUp {
+//             0% { transform: translateY(0); }
+//             100% { transform: translateY(-50%); }
+//           }
+
+//           @keyframes scrollDown {
+//             0% { transform: translateY(-50%); }
+//             100% { transform: translateY(0); }
+//           }
+
+//           .animate-scrollUp {
+//             animation: scrollUp 30s linear infinite;
+//           }
+
+//           .animate-scrollDown {
+//             animation: scrollDown 30s linear infinite;
+//           }
+
+//           /* Custom Hero Section Height */
+//           .hero-custom-height {
+//             min-height: 90vh;
+//           }
+//         `}
+//       </style>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
+
+
+import React from "react";
 import { Link } from "react-router-dom";
 
-const API_URL =
-  "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLjfTOkayP_UukrEIJEMGxbvkr6obP8sMlInlz9wKTHCXVeMnjIAN6jlbZDVnjvCJH-ChSwBiI2ZJ4iBqyfO_A58E7BzQE3vPmqfDjsx1WjFZeu4ret53q6jsSjxp_rOcgNREnZb6TOaf3Ki9X8UOABV0RVVs-9U_6ixPLbKq4IB5D_1zEcPGL04GBks35QQE52Bm79WC0lGvU0X2PVvGiRPjVO8CdQRskfR1RA6jt9QknWGH9R_ZWCA3SXQj8kEDUXM5igi945sF5hxUkGIx9lYVH5JIaW_CHUicwFq&lib=MuI5z9z_By3kS-EfJuAuFkGCHQy4BBFlN";
-
 const HeroSection = () => {
-  const [images, setImages] = useState({ row1: [], row2: [], row3: [] });
-
-  useEffect(() => {
-    fetch(API_URL)
-      .then((res) => res.json())
-      .then((data) => setImages(data))
-      .catch((err) => console.error("Failed to fetch images:", err));
-  }, []);
+  const images = {
+    row1: [1, 2, 3, 4, 5].map((i) => `/HomeHeroimages/image${i}.png`),
+    row2: [6, 7, 8, 9, 10].map((i) => `/HomeHeroimages/image${i}.png`),
+    row3: [11, 12, 13, 14, 15].map((i) => `/HomeHeroimages/image${i}.png`),
+  };
 
   return (
     <section className="relative flex flex-col lg:flex-row items-center justify-between px-12 pt-2 pb-4 bg-white text-black overflow-hidden hero-custom-height">
-
       {/* Left Content */}
       <div className="relative z-10 max-w-xl text-left space-y-7">
         <h1 className="text-4xl md:text-6xl font-bold">
           Your <em className="italic text-red-600">creative team’s</em><br /> creative team™
         </h1>
 
-        <p className="text-lg text-black ">
+        <p className="text-lg text-black">
           Scale your in-house creative team with top global talent powered by
           industry-leading AI workflows, delivering anything you can imagine fast
           and affordably.
         </p>
 
         <Link to="/contact">
-          <button className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold shadow-lg transition duration-300">
+          <button className="relative px-6 py-3 bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50">
             Book a demo
           </button>
         </Link>
       </div>
 
-      {/* Right Side: Three Vertical Columns */}
+      {/* Right Side: Three Columns of Images */}
       <div className="relative z-10 flex gap-4 mt-10 lg:mt-0">
-
-        {/* Column 1 */}
-        {images.row1.length > 0 && (
-          <div className="overflow-hidden h-[400px] w-[160px]">
-            <div className="flex flex-col animate-scrollUp">
-              {[...images.row1, ...images.row1].map((img, idx) => (
+        {Object.entries(images).map(([row, imgs], colIdx) => (
+          <div
+            key={row}
+            className="overflow-hidden h-[400px] w-[180px]"
+          >
+            <div
+              className={`flex flex-col ${
+                colIdx === 1 ? "animate-scrollDown" : "animate-scrollUp"
+              }`}
+            >
+              {[...imgs, ...imgs].map((img, idx) => (
                 <img
-                  key={`col1-${idx}`}
+                  key={`${row}-${idx}`}
                   src={img}
                   alt={`Hero Img ${idx + 1}`}
                   className="w-full h-36 object-cover rounded-md mb-3"
@@ -155,39 +277,7 @@ const HeroSection = () => {
               ))}
             </div>
           </div>
-        )}
-
-        {/* Column 2 */}
-        {images.row2.length > 0 && (
-          <div className="overflow-hidden h-[400px] w-[160px]">
-            <div className="flex flex-col animate-scrollDown">
-              {[...images.row2, ...images.row2].map((img, idx) => (
-                <img
-                  key={`col2-${idx}`}
-                  src={img}
-                  alt={`Hero Img ${idx + 1}`}
-                  className="w-full h-36 object-cover rounded-md mb-3"
-                />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Column 3 */}
-        {images.row3.length > 0 && (
-          <div className="overflow-hidden h-[400px] w-[160px]">
-            <div className="flex flex-col animate-scrollUp">
-              {[...images.row3, ...images.row3].map((img, idx) => (
-                <img
-                  key={`col3-${idx}`}
-                  src={img}
-                  alt={`Hero Img ${idx + 1}`}
-                  className="w-full h-36 object-cover rounded-md mb-3"
-                />
-              ))}
-            </div>
-          </div>
-        )}
+        ))}
       </div>
 
       {/* Animation Keyframes */}
@@ -197,21 +287,16 @@ const HeroSection = () => {
             0% { transform: translateY(0); }
             100% { transform: translateY(-50%); }
           }
-
           @keyframes scrollDown {
             0% { transform: translateY(-50%); }
             100% { transform: translateY(0); }
           }
-
           .animate-scrollUp {
             animation: scrollUp 30s linear infinite;
           }
-
           .animate-scrollDown {
             animation: scrollDown 30s linear infinite;
           }
-
-          /* Custom Hero Section Height */
           .hero-custom-height {
             min-height: 90vh;
           }

@@ -30,8 +30,8 @@ const HexagonBlob = () => {
     >
       <icosahedronGeometry args={[1, 4]} />
       <meshStandardMaterial
-        color={hovered ? "#a855f7" : "#6366f1"}
-        emissive={hovered ? "#a855f7" : "#000000"}
+        color={hovered ? "#f75555ff" : "#f16363ff"}
+        emissive={hovered ? "#f75555ff" : "#ff0000ff"}
         roughness={0.3}
         metalness={0.5}
         wireframe

@@ -174,40 +174,38 @@ const HomeTestimonial = () => {
   };
 
   return (
-    <section className="bg-[#1b1b29] py-24 text-white overflow-hidden relative">
+    <section className="bg-white text-black py-24 overflow-hidden relative">
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-4xl md:text-5xl font-bold mb-20 text-center bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer">
+        <h3 className="text-4xl md:text-5xl font-bold mb-20 text-center bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent animate-shimmer">
           What Our Clients Say
         </h3>
 
         {/* Scroll container */}
         <div className="relative overflow-hidden">
           {/* Fade edges */}
-          <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-[#1b1b29] via-[#1b1b29]/80 to-transparent z-20 pointer-events-none" />
-          <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-[#1b1b29] via-[#1b1b29]/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
 
           {/* Scrolling Track */}
-          <div className="flex gap-6 animate-slideLeft w-max">
+          <div className="flex gap-6 animate-slideLeft w-max bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent animate-shimmer">
             {[...testimonials, ...testimonials].map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleCardClick(index % testimonials.length)}
-                className="flex-shrink-0 w-72 p-5 bg-[#11111c]/80 rounded-xl 
-                  backdrop-blur-md shadow-lg shadow-purple-700/20 cursor-pointer 
-                  hover:scale-[1.03] transition-transform duration-300 hover:shadow-purple-500/30 relative z-10"
+                className="flex-shrink-0 w-72 p-5 bg-white rounded-xl shadow-lg shadow-red-500/20 cursor-pointer hover:scale-[1.03] transition-transform duration-300 hover:shadow-red-500/40 relative z-10"
               >
                 <img
                   src={getDriveThumbnail(item.clientImage)}
                   alt="Client"
-                  className="w-14 h-14 rounded-full object-cover mb-3 border border-purple-500/30"
+                  className="w-14 h-14 rounded-full object-cover mb-3 border border-red-500/40"
                   onError={(e) =>
                     (e.target.src = "https://via.placeholder.com/48?text=Img")
                   }
                 />
-                <h4 className="text-white font-semibold text-sm mb-1">
+                <h4 className="text-black font-semibold text-sm mb-1">
                   {item.clientName}
                 </h4>
-                <p className="text-sm text-gray-300 mb-3 line-clamp-4">
+                <p className="text-sm text-gray-600 mb-3 line-clamp-4">
                   {item.clientTestimonial}
                 </p>
                 <div className="flex gap-[2px]">
@@ -227,16 +225,16 @@ const HomeTestimonial = () => {
       {/* Modal */}
       {activeIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center px-4"
+          className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center px-4"
           onClick={closeModal}
         >
           <div
-            className="bg-[#1a1a2a] max-w-md w-full p-6 rounded-2xl text-white relative animate-scalePop"
+            className="bg-white max-w-md w-full p-6 rounded-2xl text-black relative animate-scalePop border-2 border-[#E32225]"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeModal}
-              className="absolute top-2 right-3 text-sm text-gray-400 hover:text-white"
+              className="absolute top-2 right-3 text-sm text-gray-500 hover:text-red-500"
             >
               Close ✕
             </button>
@@ -244,10 +242,10 @@ const HomeTestimonial = () => {
               <img
                 src={getDriveThumbnail(testimonials[activeIndex].clientImage)}
                 alt="Client"
-                className="w-16 h-16 rounded-full object-cover border border-purple-400"
+                className="w-16 h-16 rounded-full object-cover border border-red-500"
               />
               <div>
-                <h4 className="font-semibold text-white text-lg mb-1">
+                <h4 className="font-semibold text-black text-lg mb-1">
                   {testimonials[activeIndex].clientName}
                 </h4>
                 <div className="flex gap-[2px]">
@@ -262,7 +260,7 @@ const HomeTestimonial = () => {
                 </div>
               </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               {testimonials[activeIndex].clientTestimonial}
             </p>
           </div>

@@ -30,11 +30,11 @@ export default function MusicPlayer() {
       {/* Transparent Floating Music Button */}
       <button
         onClick={toggleMusic}
-        className="fixed bottom-6 left-6 w-12 h-12 rounded-full bg-transparent border border-purple-500 text-purple-400 hover:text-white flex items-center justify-center shadow-none hover:shadow-[0_0_10px_rgba(168,85,247,0.8)] transition-all duration-300 z-50"
+        className={`fixed bottom-6 left-6 w-12 h-12 rounded-full bg-gradient-to-br from-black to-[#E32225] border border-[#E32225] text-white hover:text-yellow-400 flex items-center justify-center shadow-md hover:shadow-[0_0_15px_rgba(227,34,37,0.7)] transition-all duration-300 z-50`}
         aria-label="Toggle Music"
       >
         {playing ? <FaPause size={20} /> : <FaMusic size={20} />}
       </button>
-    </>
-  );
+    </>
+  );
 }

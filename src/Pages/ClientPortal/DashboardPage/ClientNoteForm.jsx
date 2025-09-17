@@ -34,21 +34,20 @@ const ClientNoteForm = ({ clientId, onNoteAdded }) => {
     setLoading(false);
     setShowStatus(true);
 
-    // Auto-hide the message after 3 seconds
     setTimeout(() => {
       setShowStatus(false);
     }, 3000);
   };
 
   return (
-    <section className="bg-[#1b1b29] text-white px-6 pb-24 pt-0 w-full">
+    <section className="bg-black text-white px-6 pb-24 pt-0 w-full">
       <div className="max-w-3xl mx-auto text-center">
         {/* Shimmer Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer"
+          className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-[#E32225] via-[#FFD700] to-[#E32225] bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer"
         >
           Add a New Note
         </motion.h2>
@@ -60,13 +59,14 @@ const ClientNoteForm = ({ clientId, onNoteAdded }) => {
             value={noteText}
             onChange={(e) => setNoteText(e.target.value)}
             placeholder="Type your note here..."
-            className="w-full p-4 rounded-lg bg-[#2d2d44] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+            className="w-full p-4 rounded-lg  text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#E32225]"
+            style={{ background: "linear-gradient(135deg, #281a1aff, #0f0a0aff)" }}></textarea>
+          
 
           <button
             type="submit"
             disabled={loading}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 disabled:opacity-50"
+            className="bg-[#E32225] hover:bg-[#b71c1c] text-white font-semibold py-2 px-6 rounded-lg transition duration-300 disabled:opacity-50"
           >
             {loading ? "Adding..." : "Add Note"}
           </button>
@@ -85,6 +85,7 @@ const ClientNoteForm = ({ clientId, onNoteAdded }) => {
           )}
         </form>
       </div>
+      
     </section>
   );
 };

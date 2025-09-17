@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 const WhyUs = () => {
   return (
-    <div className="-mt-[100px] bg-gradient-to-br from-[#0d0d14] via-[#13131d] to-[#1b1b29] text-white overflow-hidden">
+    <div className="-mt-[100px] bg-gradient-to-br from-black via-[#1a1a1a] to-[#111111] text-white overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative h-[calc(100vh+100px)] flex flex-col justify-center items-center text-center px-4 pt-[100px]">
         <div className="absolute inset-0">
-          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-purple-700 via-indigo-800 to-transparent blur-3xl opacity-40 animate-pulse"></div>
-          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-cyan-500 via-purple-700 to-transparent blur-2xl opacity-30 animate-pulse"></div>
+          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-red-700 via-red-800 to-transparent blur-3xl opacity-40 animate-pulse"></div>
+          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-red-600 via-red-700 to-transparent blur-2xl opacity-30 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Why Work With Seyreon
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 font-medium">
+          <p className="text-lg md:text-xl text-red-300 font-medium">
             We don’t just build bots — we build systems that give you back your
             time, your focus, and your freedom.
           </p>
@@ -55,16 +55,16 @@ const WhyUs = () => {
           ].map((item, index) => (
             <motion.div
               key={index}
-              className="bg-[#1a1a1a]/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-purple-500/20 transition transform hover:-translate-y-1 hover:scale-[1.03] duration-300"
+              className="bg-[#1a1a1a]/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-red-500/20 transition transform hover:-translate-y-1 hover:scale-[1.03] duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h3 className="text-xl font-semibold mb-2 text-purple-300">
+              <h3 className="text-xl font-semibold mb-2 text-red-400">
                 {item.title}
               </h3>
-              <p className="text-gray-300">{item.text}</p>
+              <p className="text-red-300">{item.text}</p>
             </motion.div>
           ))}
         </div>
@@ -81,7 +81,7 @@ const WhyUs = () => {
           What Happens When Automation Just… Works?
         </motion.h2>
         <motion.p
-          className="text-lg text-gray-300 leading-relaxed"
+          className="text-lg text-red-300 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -122,16 +122,16 @@ const WhyUs = () => {
           ].map((item, index) => (
             <motion.div
               key={index}
-              className="bg-[#1c1c25]/70 backdrop-blur p-6 rounded-xl shadow-md border border-purple-800/20"
+              className="bg-[#1c1c25]/70 backdrop-blur p-6 rounded-xl shadow-md border border-red-800/20"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <p className="text-purple-400 font-semibold text-sm mb-2">
+              <p className="text-red-400 font-semibold text-sm mb-2">
                 {item.name}
               </p>
-              <p className="text-gray-300">{item.result}</p>
+              <p className="text-red-300">{item.result}</p>
             </motion.div>
           ))}
         </div>
@@ -163,16 +163,16 @@ const WhyUs = () => {
           ].map((item, index) => (
             <motion.div
               key={index}
-              className="bg-[#1a1a1a]/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-purple-500/20 transition duration-300"
+              className="bg-[#1a1a1a]/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-red-500/20 transition duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <h3 className="text-xl font-semibold mb-2 text-purple-300">
+              <h3 className="text-xl font-semibold mb-2 text-red-400">
                 {item.title}
               </h3>
-              <p className="text-gray-300">{item.text}</p>
+              <p className="text-red-300">{item.text}</p>
             </motion.div>
           ))}
         </div>

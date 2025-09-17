@@ -13,21 +13,21 @@ export default function N8nChatWidget() {
     style.innerHTML = `
       :root {
         /* Brand colors */
-        --chat--color-primary: #9333ea; /* Purple accent */
-        --chat--color-primary-shade-50: #7e22ce;
-        --chat--color-primary-shade-100: #6b21a8;
+        --chat--color-primary: #E32225; /* Red accent */
+        --chat--color-primary-shade-50: #c91f20;
+        --chat--color-primary-shade-100: #a71b1b;
 
-        --chat--color-secondary: #20b69e; /* Teal user bubble */
-        --chat--color-secondary-shade-50: #1ca08a;
+        --chat--color-secondary: #E32225; /* Red user bubble */
+        --chat--color-secondary-shade-50: #c91f20;
 
         --chat--color-white: #ffffff;
-        --chat--color-light: #111827; /* Dark background instead of white */
-        --chat--color-light-shade-50: #1f2937;
-        --chat--color-light-shade-100: #374151;
+        --chat--color-light: #0e0e0e; /* Dark background instead of white */
+        --chat--color-light-shade-50: #1f1f1f;
+        --chat--color-light-shade-100: #2c2c2c;
         --chat--color-medium: #9ca3af;
-        --chat--color-dark: #0e0e0e; /* Match site bg */
+        --chat--color-dark: #0a0a0a; /* Match site bg */
         --chat--color-disabled: #6b7280;
-        --chat--color-typing: #9ca3af;
+        --chat--color-typing: #d4af37; /* Golden typing indicator */
 
         /* Layout */
         --chat--window--width: 350px;
@@ -39,7 +39,7 @@ export default function N8nChatWidget() {
         /* Header */
         --chat--header-height: auto;
         --chat--header--padding: var(--chat--spacing);
-        --chat--header--background: linear-gradient(135deg, #9333ea, #3b82f6);
+        --chat--header--background: linear-gradient(135deg, #000000, #E32225);
         --chat--header--color: #ffffff;
         --chat--heading--font-size: 1.1em;
         --chat--subtitle--line-height: 1.6;
@@ -49,15 +49,15 @@ export default function N8nChatWidget() {
         --chat--message--padding: 0.7rem 1rem;
         --chat--message--border-radius: 1rem;
         --chat--message-line-height: 1.5;
-        --chat--message--bot--background: #1f2937; /* dark gray bubble */
+        --chat--message--bot--background: #1f1f1f; /* dark gray bubble */
         --chat--message--bot--color: #f9fafb;
-        --chat--message--user--background: linear-gradient(135deg, #9333ea, #3b82f6);
+        --chat--message--user--background: linear-gradient(135deg, #000000, #E32225);
         --chat--message--user--color: #ffffff;
 
         /* Toggle button */
-        --chat--toggle--background: linear-gradient(135deg, #9333ea, #3b82f6);
-        --chat--toggle--hover--background: #7e22ce;
-        --chat--toggle--active--background: #6b21a8;
+        --chat--toggle--background: linear-gradient(135deg, #000000, #E32225);
+        --chat--toggle--hover--background: #c91f20;
+        --chat--toggle--active--background: #a71b1b;
         --chat--toggle--color: #ffffff;
         --chat--toggle--size: 56px;
       }
@@ -71,23 +71,23 @@ export default function N8nChatWidget() {
       }
 
       .chat__message--bot {
-        border: 1px solid #374151;
+        border: 1px solid #2c2c2c;
       }
 
       .chat__message--user {
         font-weight: 500;
-        box-shadow: 0 2px 8px rgba(147, 51, 234, 0.5);
+        box-shadow: 0 2px 8px rgba(227,34,37,0.5);
       }
 
       .chat__toggle {
-        box-shadow: 0 4px 12px rgba(147, 51, 234, 0.6);
+        box-shadow: 0 4px 12px rgba(227,34,37,0.6);
       }
 
       .chat__textarea {
         border-radius: 9999px !important; /* pill shape */
         padding: 0.6rem 1rem !important;
-        border: 1px solid #374151 !important;
-        background: #1f2937 !important;
+        border: 1px solid #2c2c2c !important;
+        background: #1f1f1f !important;
         color: #f9fafb !important;
       }
 

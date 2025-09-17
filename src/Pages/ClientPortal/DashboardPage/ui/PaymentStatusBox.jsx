@@ -26,7 +26,7 @@ const ExternalLinks = ({ notion, drive }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 bg-clip-text text-transparent animate-shimmer"
+          className="text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-[#E32225] via-[#FFD700] to-[#E32225] bg-clip-text text-transparent animate-shimmer"
         >
           Project Links
         </motion.h2>
@@ -43,7 +43,7 @@ const ExternalLinks = ({ notion, drive }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
-                className="flex items-center justify-center px-6 py-5 rounded-2xl bg-[#26263a] shadow-xl border border-white/10 hover:shadow-2xl hover:border-indigo-400 hover:bg-[#2f2f47] transition-all duration-300 group relative overflow-hidden"
+                className="flex items-center justify-center px-6 py-5 rounded-2xl bg-[#26263a] shadow-xl border border-[#E32225]/40 hover:shadow-2xl hover:border-[#E32225] hover:bg-[#2f2f47] transition-all duration-300 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-white/5 backdrop-blur-md group-hover:backdrop-blur-xl transition-all duration-300 pointer-events-none rounded-2xl" />
                 <div className="flex items-center z-10 font-medium text-lg tracking-wide">

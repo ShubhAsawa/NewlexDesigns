@@ -9,24 +9,24 @@ const fadeInUp = {
 
 const TermsAndConditions = () => {
   return (
-    <div className="-mt-[100px] text-white bg-gradient-to-br from-[#0d0d14] via-[#13131d] to-[#1b1b29]">
+    <div className="-mt-[100px] text-white bg-gradient-to-br from-black via-[#1a1a1a] to-[#111111]">
       {/* Hero Section */}
       <section className="h-[calc(100vh+100px)] pt-[100px] flex flex-col justify-center items-center text-center px-6 relative">
         {/* Background Orbs */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-purple-700 via-indigo-800 to-transparent blur-3xl opacity-40 animate-pulse"></div>
-          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-cyan-500 via-purple-700 to-transparent blur-2xl opacity-30 animate-pulse"></div>
+          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-red-700 via-red-800 to-transparent blur-3xl opacity-40 animate-pulse"></div>
+          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-red-600 via-red-700 to-transparent blur-2xl opacity-30 animate-pulse"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl">
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-4xl md:text-6xl font-bold mb-4 text-white"
             {...fadeInUp}
           >
             Terms & Conditions
           </motion.h1>
           <motion.p
-            className="text-lg md:text-xl text-gray-300 font-medium"
+            className="text-lg md:text-xl text-red-300 font-medium"
             {...fadeInUp}
             transition={{ ...fadeInUp.transition, delay: 0.2 }}
           >
@@ -36,7 +36,7 @@ const TermsAndConditions = () => {
       </section>
 
       {/* Content Section */}
-      <section className="px-6 py-20 max-w-4xl mx-auto text-gray-300 leading-relaxed space-y-14">
+      <section className="px-6 py-20 max-w-4xl mx-auto text-red-300 leading-relaxed space-y-14">
         {[
           {
             title: "1. What You’re Getting",
@@ -79,10 +79,10 @@ const TermsAndConditions = () => {
             {...fadeInUp}
             transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
           >
-            <h2 className="text-2xl font-semibold text-purple-300 mb-2">
+            <h2 className="text-2xl font-semibold text-red-400 mb-2">
               {section.title}
             </h2>
-            <p className="text-gray-400">{section.content}</p>
+            <p className="text-red-300">{section.content}</p>
           </motion.div>
         ))}
       </section>

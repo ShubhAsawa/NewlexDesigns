@@ -72,12 +72,12 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="bg-[#1b1b29] py-20 text-white px-6">
+    <section className="bg-white py-20 text-black px-6">
       <div className="max-w-xl mx-auto text-center animate-scaleIn">
-        <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer">
+        <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#E32225] via-black to-[#E32225] bg-[length:200%_auto] bg-clip-text text-transparent animate-shimmer">
           Join Our Newsletter
         </h3>
-        <p className="text-gray-400 mb-10 text-base md:text-lg">
+        <p className="text-gray-600 mb-10 text-base md:text-lg">
           We don’t spam. We don’t sell your data. Just pure automation goodness.
         </p>
 
@@ -97,7 +97,7 @@ const Newsletter = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className={clsx(
-                  "px-6 py-3 w-full rounded-full bg-white/10 text-white placeholder:text-gray-400 outline-none backdrop-blur-md transition-all duration-500",
+                  "px-6 py-3 w-full rounded-full bg-black/5 text-black placeholder:text-gray-500 outline-none backdrop-blur-md transition-all duration-500",
                   animating && "opacity-0 scale-95 blur-sm"
                 )}
               />
@@ -115,7 +115,7 @@ const Newsletter = () => {
                 <button
                   type="submit"
                   disabled={animating}
-                  className="px-8 py-3 rounded-full text-white font-medium bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg relative z-30"
+                  className="px-8 py-3 rounded-full text-white font-medium bg-gradient-to-r from-[#E32225] to-red-700 shadow-lg relative z-30"
                 >
                   Subscribe
                 </button>
@@ -128,9 +128,7 @@ const Newsletter = () => {
                         key={i}
                         className="w-[6px] h-[6px] absolute rounded-full animate-dustTrail mix-blend-screen"
                         style={{
-                          backgroundColor: `hsl(${
-                            200 + Math.random() * 120
-                          }, 100%, 75%)`,
+                          backgroundColor: `hsl(${0 + Math.random() * 20}, 100%, 60%)`, // red shades
                           top: `${Math.random() * 24 - 12}px`,
                           left: `${Math.random() * 40 - 20}px`,
                           animationDelay: `${i * 0.06}s`,
@@ -145,21 +143,21 @@ const Newsletter = () => {
 
           {status === "success" && (
             <div className="flex justify-center items-center gap-2 mt-6 animate-fadeIn">
-              <CheckCircle className="w-6 h-6 text-green-400" />
-              <p className="text-green-400 text-lg">
-                You're now part of the Seyreon family!
+              <CheckCircle className="w-6 h-6 text-green-600" />
+              <p className="text-green-600 text-lg">
+                You're now part of the NewLexDesigns family!
               </p>
             </div>
           )}
 
           {status === "error" && (
-            <p className="text-red-400 mt-4 animate-fadeIn">
+            <p className="text-red-600 mt-4 animate-fadeIn">
               Something went wrong. Please try again.
             </p>
           )}
 
           {status === "invalid" && (
-            <p className="text-yellow-400 mt-4 animate-fadeIn">
+            <p className="text-yellow-600 mt-4 animate-fadeIn">
               Please enter a valid email address.
             </p>
           )}

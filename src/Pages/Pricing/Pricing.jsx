@@ -1,4 +1,4 @@
-// /pages/Pricing/Pricing.jsx
+// /pages/Portfolio/Portfolio.jsx
 import React from "react";
 import HeroSection from "./HeroSection";
 import PricingCards from "./PricingCards";

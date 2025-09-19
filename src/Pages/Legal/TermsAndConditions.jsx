@@ -9,18 +9,12 @@ const fadeInUp = {
 
 const TermsAndConditions = () => {
   return (
-    <div className="-mt-[100px] text-white bg-gradient-to-br from-black via-[#1a1a1a] to-[#111111]">
+    <div className="-mt-[100px] bg-white text-black">
       {/* Hero Section */}
-      <section className="h-[calc(100vh+100px)] pt-[100px] flex flex-col justify-center items-center text-center px-6 relative">
-        {/* Background Orbs */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-red-700 via-red-800 to-transparent blur-3xl opacity-40 animate-pulse"></div>
-          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-red-600 via-red-700 to-transparent blur-2xl opacity-30 animate-pulse"></div>
-        </div>
-
+      <section className="h-[calc(100vh+100px)] pt-[100px] flex flex-col justify-center items-center bg-gradient-to-br from-black to-[#E32225] text-white text-center px-6">
         <div className="relative z-10 max-w-4xl">
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-4 text-white"
+            className="text-4xl md:text-6xl font-bold mb-4 "
             {...fadeInUp}
           >
             Terms & Conditions
@@ -36,7 +30,7 @@ const TermsAndConditions = () => {
       </section>
 
       {/* Content Section */}
-      <section className="px-6 py-20 max-w-4xl mx-auto text-red-300 leading-relaxed space-y-14">
+      <section className="px-6 py-20 max-w-4xl mx-auto leading-relaxed space-y-14">
         {[
           {
             title: "1. What You’re Getting",
@@ -79,10 +73,10 @@ const TermsAndConditions = () => {
             {...fadeInUp}
             transition={{ ...fadeInUp.transition, delay: index * 0.1 }}
           >
-            <h2 className="text-2xl font-semibold text-red-400 mb-2">
+            <h2 className="text-2xl font-semibold mb-2 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
               {section.title}
             </h2>
-            <p className="text-red-300">{section.content}</p>
+            <p>{section.content}</p>
           </motion.div>
         ))}
       </section>

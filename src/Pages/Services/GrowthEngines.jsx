@@ -203,24 +203,14 @@ const timeSavedData = [
 const AIAssistant = () => {
   return (
     <div className="relative min-h-screen bg-white text-black">
-      {/* HERO SECTION */}
-      <div className="relative h-screen w-screen flex flex-col justify-center items-center text-center px-4">
-        {/* Gradient background */}
-        <div className="absolute inset-0">
-          {/* Dark gradient base */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a0000] to-[#E32225] opacity-90"></div>
-
-          {/* Soft radial highlights */}
-          <div className="absolute top-[-30%] left-[-20%] w-[90%] h-[160%] bg-red-900/40 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-[-30%] right-[-20%] w-[90%] h-[160%] bg-[#E32225]/40 rounded-full blur-[120px]"></div>
-        </div>
-
+      {/* HERO SECTION (no gradient, solid bg-black) */}
+      <div className="relative h-screen w-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-black to-[#E32225] text-white">
         {/* Text Content */}
         <div className="relative z-10 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
             AI Chat & Call Assistants
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 font-medium">
+          <p className="text-lg md:text-xl text-gray-300 font-medium">
             Convert leads, handle support, and qualify prospects — all through
             intelligent, automated conversations.
           </p>
@@ -239,7 +229,7 @@ const AIAssistant = () => {
 
         {/* Chat Assistant */}
         <section className="mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             What is an AI Chat Assistant?
           </h2>
           <p className="text-gray-700 mb-6">
@@ -259,7 +249,7 @@ const AIAssistant = () => {
 
         {/* Call Assistant */}
         <section className="mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             What is an AI Call Assistant?
           </h2>
           <p className="text-gray-700 mb-6">
@@ -280,7 +270,7 @@ const AIAssistant = () => {
 
         {/* Benefits */}
         <section className="mb-20">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             Why AI Assistants Are Game-Changing
           </h2>
           <p className="text-gray-700 mb-6">
@@ -311,13 +301,13 @@ const AIAssistant = () => {
 
         {/* Charts */}
         <section className="mb-20">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             Real-World Impact: Proven Stats
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
             {/* Chart 1 */}
             <div>
-              <h3 className="text-4xl md:text-2xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 text-black">
                 Lead Response Time (mins)
               </h3>
               <ResponsiveContainer width="100%" height={260}>
@@ -337,7 +327,7 @@ const AIAssistant = () => {
 
             {/* Chart 2 */}
             <div>
-              <h3 className="text-4xl md:text-2xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 text-black">
                 Lead-to-Customer Conversion Rate
               </h3>
               <ResponsiveContainer width="100%" height={260}>
@@ -357,7 +347,7 @@ const AIAssistant = () => {
 
             {/* Chart 3 */}
             <div>
-              <h3 className="text-4xl md:text-2xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 text-black">
                 Weekly Support Hours Saved
               </h3>
               <ResponsiveContainer width="100%" height={260}>
@@ -387,7 +377,7 @@ const AIAssistant = () => {
 
         {/* Final CTA */}
         <div className="text-center">
-          <h3 className="text-4xl md:text-4xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          <h3 className="text-4xl font-bold mb-4 text-black">
             This Is Your Sign to Stop Working Manually
           </h3>
           <p className="text-gray-700 mb-6 text-lg">
@@ -395,7 +385,7 @@ const AIAssistant = () => {
             your business.
           </p>
           <Link to="/contact">
-            <button className="relative px-6 py-3 bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50">
+            <button className="relative px-6 py-3 bg-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50">
               Book a Free Strategy Call
             </button>
           </Link>

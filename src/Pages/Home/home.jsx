@@ -7,6 +7,7 @@ import HomePhoto from "./HomePhoto"; // ✅ scrolling photos
 import HomeGlow from "./HomeGlow";   // ✅ new glowing section
 import HomeBlow from "./HomeBlow";
 
+
 const Home = () => {
   return (
     <div className="bg-[#0e0e0e] text-white">

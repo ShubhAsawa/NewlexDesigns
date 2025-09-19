@@ -225,29 +225,27 @@ const Blog = () => {
 
   return (
     <div className="-mt-[100px] min-h-screen">
-      {/* HERO SECTION (black gradient stays same) */}
-      <section className="relative h-auto lg:h-[calc(100vh+100px)] pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-6 overflow-visible bg-gradient-to-br from-black via-[#1a1a1a] to-[#111111] text-white">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-[-20%] left-[-30%] w-[80%] h-[160%] bg-gradient-to-tr from-[#E32225] via-red-900 to-transparent blur-3xl opacity-40 animate-pulse"></div>
-          <div className="absolute bottom-[-20%] right-[-20%] w-[80%] h-[120%] bg-gradient-to-br from-black via-[#E32225] to-transparent blur-2xl opacity-30 animate-pulse"></div>
-        </div>
+      {/* HERO SECTION (with gradient background) */}
+<section className="relative h-auto lg:h-[calc(100vh+100px)] pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-black to-[#E32225] text-white">
+  <div className="relative z-10 max-w-4xl">
+    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+      Insights from the Seyreon Team
+    </h1>
+    <p className="text-lg md:text-xl font-medium text-red-300">
+      We share lessons, breakthroughs, and behind-the-scenes from building
+      AI, automations, and the future of business tech.
+    </p>
+  </div>
+</section>
 
-        <div className="relative z-10 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Insights from the Seyreon Team
-          </h1>
-          <p className="text-lg md:text-xl font-medium text-red-300">
-            We share lessons, breakthroughs, and behind-the-scenes from building
-            AI, automations, and the future of business tech.
-          </p>
-        </div>
-      </section>
 
-      {/* SEARCH + FILTER SECTION (white background, black text, red accents) */}
+      {/* SEARCH + FILTER SECTION */}
       <section className="bg-white text-black px-6 md:px-20 py-12 grid grid-cols-1 md:grid-cols-4 gap-10 min-h-screen">
         {/* Categories Sidebar */}
         <div className="relative z-20">
-          <h2 className="text-xl font-semibold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">Categories</h2>
+          <h2 className="text-xl font-semibold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+            Categories
+          </h2>
           <ul className="space-y-2">
             {categories.map((cat, idx) => (
               <li

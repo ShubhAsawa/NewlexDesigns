@@ -252,10 +252,15 @@ const Footer = () => {
               </Link>
             </li>
             <li>
+              <Link to="/portfolio" className="hover:text-[#E32225] transition">
+                Portfolio
+              </Link>
+            </li>
+            {/* <li>
               <Link to="/pricing" className="hover:text-[#E32225] transition">
                 Pricing
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/about" className="hover:text-[#E32225] transition">
                 About Us
@@ -364,3 +369,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

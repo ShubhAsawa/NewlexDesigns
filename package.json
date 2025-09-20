@@ -31,7 +31,8 @@
     "react-parallax-tilt": "^1.7.300",
     "react-router-dom": "^7.6.3",
     "recharts": "^3.0.2",
-    "three": "^0.179.1"
+    "three": "^0.179.1",
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",

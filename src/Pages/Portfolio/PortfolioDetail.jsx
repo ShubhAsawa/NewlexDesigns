@@ -269,6 +269,7 @@
 //   );
 // };
 
+<<<<<<< HEAD
 // // src/Pages/Portfolio/PortfolioDetail.jsx
 // import React, { useState } from "react";
 // import { useParams, useNavigate } from "react-router-dom";
@@ -1095,6 +1096,18 @@ const fadeUp = {
 const PortfolioDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+=======
+// src/Pages/Portfolio/PortfolioDetail.jsx
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import portfolioProjects from "../../data/portfolioData";
+
+const PortfolioDetail = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("client");
+
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
   const project = portfolioProjects.find((p) => p.id === parseInt(id));
 
   if (!project) {
@@ -1103,7 +1116,11 @@ const PortfolioDetail = () => {
         Project not found.
         <button
           onClick={() => navigate("/portfolio")}
+<<<<<<< HEAD
           className="ml-4 px-4 py-2 bg-[#E32225] text-white rounded-lg hover:bg-red-700 transition"
+=======
+          className="ml-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
         >
           Back to Portfolio
         </button>
@@ -1111,6 +1128,7 @@ const PortfolioDetail = () => {
     );
   }
 
+<<<<<<< HEAD
   const renderCinematicImages = (startIndex = 0, count = 4) => {
     const imgs = project.images.slice(startIndex, startIndex + count);
     return imgs.map((img, idx) => {
@@ -1220,11 +1238,35 @@ const PortfolioDetail = () => {
           <div className="flex flex-wrap gap-4 text-lg font-medium bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent font-extrabold flex">
             {project.tags?.map((tag, idx) => (
               <span key={idx} className="capitalize">
+=======
+  return (
+    <section className="bg-white text-black">
+      <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] max-w-[1600px] mx-auto">
+        
+        {/* Left Side - Text */}
+        <div className="px-6 md:px-12 lg:px-16 py-20">
+          {/* Category */}
+          <p className="text-gray-500 text-sm mb-3">{project.category}</p>
+
+          {/* Title */}
+          <h1 className="text-3xl bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent md:text-5xl font-bold mb-6 leading-snug">
+            {project.title}
+          </h1>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            {project.tags.map((tag, idx) => (
+              <span
+                key={idx}
+                className="px-4 py-1  bg-gray-200 text-gray-700 text-sm rounded-full"
+              >
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
                 {tag}
               </span>
             ))}
           </div>
 
+<<<<<<< HEAD
           {/* On the Job Section */}
           <div className="pt-10">
             <h4 className="text-lg uppercase mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent font-extrabold flex">
@@ -1316,9 +1358,91 @@ const PortfolioDetail = () => {
         >
           ← Back to Portfolio
         </motion.button>
+=======
+          {/* Description */}
+          <p className="text-gray-700 mb-10">{project.description}</p>
+
+          {/* Accordion */}
+          {/* <div className="space-y-4">
+            {[
+              { key: "client", label: "Client", content: project.client },
+              { key: "challenge", label: "Challenge", content: project.challenge },
+              { key: "solutions", label: "Solutions", content: project.solutions },
+            ].map((section) => (
+              <div key={section.key} className="border-b pb-3">
+                <button
+                  className="flex justify-between items-center w-full font-semibold text-lg"
+                  onClick={() =>
+                    setActiveTab(activeTab === section.key ? "" : section.key)
+                  }
+                >
+                  {section.label}
+                  <span>{activeTab === section.key ? "▲" : "▼"}</span>
+                </button>
+                {activeTab === section.key && (
+                  <p className="mt-2 text-gray-600">{section.content}</p>
+                )}
+              </div>
+            ))}
+          </div> */}
+          {/* Accordion */}
+<div className="space-y-4">
+  {[
+    { key: "client", label: "Client", content: project.client },
+    { key: "challenge", label: "Challenge", content: project.challenge },
+    { key: "solutions", label: "Solutions", content: project.solutions },
+  ].map((section) => (
+    <div key={section.key} className="border-b pb-3">
+      <button
+        className="flex justify-between items-center w-full font-semibold text-lg"
+        onClick={() =>
+          setActiveTab(activeTab === section.key ? "" : section.key)
+        }
+      >
+        <span className="bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          {section.label}
+        </span>
+        <span className="bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+          {activeTab === section.key ? "▲" : "▼"}
+        </span>
+      </button>
+      {activeTab === section.key && (
+        <p className="mt-2 text-gray-600">{section.content}</p>
+      )}
+    </div>
+  ))}
+</div>
+
+
+          {/* Back Button */}
+          <button
+            onClick={() => navigate("/portfolio")}
+            className="relative px-6 py-3 bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50">
+            ← Back to Portfolio
+          </button>
+        </div>
+
+        {/* Right Side - Large Stacked Images */}
+        <div className="w-full h-full">
+          {project.images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`${project.title} ${idx}`}
+              className="w-full h-[90vh] object-cover"
+            />
+          ))}
+        </div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
       </div>
     </section>
   );
 };
 
 export default PortfolioDetail;
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795

@@ -466,6 +466,7 @@
 
 // export default Contact;
 
+<<<<<<< HEAD
 // // /pages/Services/Contact.jsx
 // import React, { useState } from "react";
 // import confetti from "canvas-confetti";
@@ -703,6 +704,10 @@
 // /pages/Services/Contact.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+=======
+// /pages/Services/Contact.jsx
+import React, { useState } from "react";
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 import confetti from "canvas-confetti";
 
 const Contact = () => {
@@ -769,6 +774,7 @@ const Contact = () => {
   const animate = "opacity-100";
 
   return (
+<<<<<<< HEAD
     <div className="relative">
       {/* HERO SECTION (centered + with motion) */}
       <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-gradient-to-br from-black to-[#E32225] text-white overflow-hidden">
@@ -790,6 +796,20 @@ const Contact = () => {
           Let’s connect and build something that works while you sleep. Fill out
           the form and we’ll get back to you within 24 hours.
         </motion.p>
+=======
+    <div className="-mt-[100px]">
+      {/* HERO SECTION (with gradient bg) */}
+      <section className="relative h-auto lg:h-[calc(100vh+100px)] pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-4 overflow-visible bg-gradient-to-br from-black to-[#E32225] text-white">
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            Contact Seyreon
+          </h1>
+          <p className="text-lg md:text-xl text-red-300 font-medium">
+            Let’s connect and build something that works while you sleep. Fill
+            out the form and we’ll get back to you within 24 hours.
+          </p>
+        </div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
       </section>
 
       {/* CONTACT FORM (white background + black text) */}
@@ -922,7 +942,11 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isSubmitting}
+<<<<<<< HEAD
               className={`w-full mt-4 bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50 hover:bg-red-700 active:scale-95 px-4 py-3 ${
+=======
+              className={`w-full mt-4 bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50 hover:bg-red-700 transition active:scale-95 px-4 py-3 rounded-lg font-semibold text-white ${
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
                 isSubmitting ? "opacity-60 cursor-not-allowed" : ""
               }`}
             >

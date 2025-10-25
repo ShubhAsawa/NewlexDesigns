@@ -150,6 +150,7 @@
 
 // export default Blog;
 
+<<<<<<< HEAD
 // // /pages/Blog.jsx
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
@@ -303,11 +304,16 @@
 
 // export default Blog;
 
+=======
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 // /pages/Blog.jsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import { motion } from "framer-motion";
+=======
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 
 const WEB_APP_URL =
   "https://script.google.com/macros/s/AKfycbyDghYYL48dhoCsVAOWMaIBUi-MPrVVbLcTzs8hY9do5fG64kPtU09gc3yR9FTHjKQE2g/exec";
@@ -379,6 +385,7 @@ const Blog = () => {
 
   return (
     <div className="-mt-[100px] min-h-screen">
+<<<<<<< HEAD
       {/* HERO SECTION (Animated) */}
       <section className="relative h-[80vh] lg:h-[calc(100vh+100px)] pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-black to-[#E32225] text-white">
         <div className="relative z-10 max-w-4xl">
@@ -402,11 +409,27 @@ const Blog = () => {
           </motion.p>
         </div>
       </section>
+=======
+      {/* HERO SECTION (with gradient background) */}
+<section className="relative h-auto lg:h-[calc(100vh+100px)] pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-black to-[#E32225] text-white">
+  <div className="relative z-10 max-w-4xl">
+    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+      Insights from the Seyreon Team
+    </h1>
+    <p className="text-lg md:text-xl font-medium text-red-300">
+      We share lessons, breakthroughs, and behind-the-scenes from building
+      AI, automations, and the future of business tech.
+    </p>
+  </div>
+</section>
+
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 
       {/* SEARCH + FILTER SECTION */}
       <section className="bg-white text-black px-6 md:px-20 py-12 grid grid-cols-1 md:grid-cols-4 gap-10 min-h-screen">
         {/* Categories Sidebar */}
         <div className="relative z-20">
+<<<<<<< HEAD
           <motion.h2
             className="text-xl font-semibold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent"
             initial={{ opacity: 0, x: -30 }}
@@ -421,19 +444,30 @@ const Blog = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
+=======
+          <h2 className="text-xl font-semibold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
+            Categories
+          </h2>
+          <ul className="space-y-2">
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
             {categories.map((cat, idx) => (
               <li
                 key={idx}
                 onClick={() => handleCategorySelect(cat)}
                 className={`cursor-pointer px-4 py-2 rounded-lg border transition ${
                   selectedCategory === cat
+<<<<<<< HEAD
                     ? "bg-gradient-to-br from-black to-[#E32225] text-white font-semibold transition duration-300 shadow-lg hover:shadow-red-500/50 border-[#E32225]"
+=======
+                    ? "bg-gradient-to-br from-black to-[#E32225] text-white font-semibold rounded-lg transition duration-300 shadow-lg hover:shadow-red-500/50 text-white border-[#E32225]"
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
                     : "bg-white border border-gray-300 text-black hover:border-[#E32225] hover:text-[#E32225]"
                 }`}
               >
                 {cat}
               </li>
             ))}
+<<<<<<< HEAD
           </motion.ul>
         </div>
 
@@ -444,6 +478,13 @@ const Blog = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
+=======
+          </ul>
+        </div>
+
+        {/* Blog Cards */}
+        <div className="md:col-span-3 relative z-20">
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
           <input
             type="text"
             placeholder="Search blogs..."
@@ -457,12 +498,19 @@ const Blog = () => {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredBlogs.map((blog, i) => (
+<<<<<<< HEAD
                 <motion.div
                   key={i}
                   onClick={() => handleCardClick(blog)}
                   className="bg-white border-2 border-[#E32225] text-black p-6 rounded-xl shadow-md hover:shadow-[0_0_20px_#E32225] transition cursor-pointer"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 200 }}
+=======
+                <div
+                  key={i}
+                  onClick={() => handleCardClick(blog)}
+                  className="bg-white border-2 border-[#E32225] text-black p-6 rounded-xl shadow-md hover:shadow-[0_0_20px_#E32225] transition cursor-pointer"
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
                 >
                   <h3 className="text-xl font-bold mb-1 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
                     {blog.title}
@@ -472,14 +520,26 @@ const Blog = () => {
                     {blog.author ? `By ${blog.author}` : ""} |{" "}
                     {new Date(blog.date).toLocaleDateString()}
                   </p>
+<<<<<<< HEAD
                 </motion.div>
               ))}
             </div>
           )}
         </motion.div>
+=======
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
       </section>
     </div>
   );
 };
 
 export default Blog;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795

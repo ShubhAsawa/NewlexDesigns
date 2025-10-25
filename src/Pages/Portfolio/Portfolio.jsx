@@ -3,7 +3,11 @@ import React from "react";
 import PortfolioHero from "./PortfolioHero";
 import PortfolioGrid from "./PortfolioGrid";
 import PortfolioGallery from "./PortfolioGallery";
+<<<<<<< HEAD
 // import PortfolioCTA from "./PortfolioCTA";
+=======
+import PortfolioCTA from "./PortfolioCTA";
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 
 const Portfolio = () => {
   return (

@@ -52,6 +52,7 @@
 // };
 
 // export default HeroSection;
+<<<<<<< HEAD
 // // /pages/Services/HeroSection.jsx
 // import React from "react";
 
@@ -100,8 +101,30 @@ const HeroSection = () => {
         We build intelligent automation systems that grow your business, save
         time, and streamline operations — all with zero manual effort.
       </motion.p>
+=======
+// /pages/Services/HeroSection.jsx
+import React from "react";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-black to-[#E32225]">
+      {/* Text content */}
+      <div className="relative z-10 max-w-4xl px-4">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          Powering Bold Ideas with Strategic Technology
+        </h1>
+        <p className="text-lg md:text-xl text-red-300 font-medium">
+          We build intelligent automation systems that grow your business, save
+          time, and streamline operations — all with zero manual effort.
+        </p>
+      </div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
     </section>
   );
 };
 
 export default HeroSection;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795

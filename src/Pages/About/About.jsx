@@ -644,6 +644,7 @@
 
 // export default About;
 
+<<<<<<< HEAD
 // // /src/about/About.jsx
 // import React from "react";
 // import { motion } from "framer-motion";
@@ -1085,6 +1086,8 @@
 
 // export default About;
 
+=======
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 // /src/about/About.jsx
 import React from "react";
 import { motion } from "framer-motion";
@@ -1094,7 +1097,11 @@ import Vinit from "../../assets/images/Vinit.png";
 import Riya from "../../assets/images/Riya.png";
 import Shubh from "../../assets/images/Shubh.png";
 import Aryan from "../../assets/images/Aryan.png";
+<<<<<<< HEAD
 import AboutText from "./AboutText";
+=======
+import AboutText from "./AboutText"; // ✅ Import AboutText
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -1107,6 +1114,7 @@ const fadeInUp = {
 
 const About = () => {
   return (
+<<<<<<< HEAD
     // 🔹 Removed -mt-[100px] to center hero vertically
     <div className="relative overflow-x-hidden">
       {/* ✨ HERO SECTION */}
@@ -1129,10 +1137,23 @@ const About = () => {
           >
             The minds building the future of AI automations
           </motion.p>
+=======
+    <div className="-mt-[100px] relative overflow-x-hidden">
+      {/* HERO SECTION */}
+      <section className="relative w-full min-h-screen pt-36 lg:pt-[100px] pb-20 flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-black to-[#E32225] text-white">
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            Meet the Team Behind Seyreon
+          </h1>
+          <p className="text-lg md:text-xl text-red-300 font-medium">
+            The minds building the future of AI automations
+          </p>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
         </div>
       </section>
 
       {/* ABOUT TEXT SECTION */}
+<<<<<<< HEAD
       <AboutText />
 
       {/* FOUNDER SECTION */}
@@ -1140,13 +1161,29 @@ const About = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Static Image */}
           <div className="w-48 h-48 shrink-0 relative overflow-hidden">
+=======
+      <AboutText /> {/* ✅ Added here */}
+
+      {/* FOUNDER */}
+      <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-8 py-20 bg-white text-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+          <motion.div
+            className="w-48 h-48 shrink-0 relative overflow-hidden"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+          >
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
             <img
               src={Yash}
               alt="Yash Maheshwari"
               className="w-full h-full object-cover rounded-full"
             />
+<<<<<<< HEAD
           </div>
 
+=======
+          </motion.div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
           <motion.div
             className="space-y-3 relative z-20"
             initial="hidden"
@@ -1157,8 +1194,15 @@ const About = () => {
             <h2 className="text-3xl font-bold bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
               Yash Maheshwari
             </h2>
+<<<<<<< HEAD
             <p className="text-[#E32225] font-medium">Founder & CEO</p>
             <p>
+=======
+            <p className="text-[#E32225] text-red-400 font-medium">
+              Founder & CEO
+            </p>
+            <p className="text-black">
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
               As the Founder and CEO of Seyreon, I am committed to driving
               innovation and excellence in AI and automation. With a deep
               passion for technology and a focus on empowering businesses, I
@@ -1173,18 +1217,33 @@ const About = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* CO-FOUNDER SECTION */}
       <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-8 bg-white text-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Static Image */}
           <div className="w-48 h-48 shrink-0 relative overflow-hidden">
+=======
+      {/* CO-FOUNDER */}
+      <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-8 bg-white text-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+          <motion.div
+            className="w-48 h-48 shrink-0 relative overflow-hidden"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+          >
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
             <img
               src={Ishika}
               alt="Ishika Maheshwari"
               className="w-full h-full object-cover rounded-full"
             />
+<<<<<<< HEAD
           </div>
 
+=======
+          </motion.div>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
           <motion.div
             className="space-y-3"
             initial="hidden"
@@ -1195,8 +1254,15 @@ const About = () => {
             <h2 className="text-3xl font-bold bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
               Ishika Maheshwari
             </h2>
+<<<<<<< HEAD
             <p className="text-[#E32225] font-medium">Co-Founder & CCO</p>
             <p>
+=======
+            <p className="text-[#E32225] text-red-400 font-medium">
+              Co-Founder & CCO
+            </p>
+            <p className="text-black">
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
               As the Co-Founder and Chief Creative Officer of Seyreon, I am
               dedicated to bringing innovative design solutions to life. With a
               strong passion for creativity and a keen eye for detail, I lead
@@ -1209,7 +1275,11 @@ const About = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* 🚀 MISSION SECTION */}
+=======
+      {/* 🚀 MISSION STATEMENT */}
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
       <motion.section
         className="w-full min-h-screen flex flex-col justify-center items-center text-center bg-white text-black px-6 md:px-10"
         initial="hidden"
@@ -1221,7 +1291,11 @@ const About = () => {
           <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
             Our Mission
           </h3>
+<<<<<<< HEAD
           <p className="text-lg leading-relaxed">
+=======
+          <p className="text-black text-lg leading-relaxed">
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
             At Seyreon, our mission is to create intelligent systems that don't
             just automate — they empower. We believe AI should enhance
             creativity, boost human potential, and unlock seamless experiences
@@ -1231,7 +1305,11 @@ const About = () => {
         </div>
       </motion.section>
 
+<<<<<<< HEAD
       {/* TEAM GRID SECTION */}
+=======
+      {/* TEAM GRID */}
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
       <section className="w-full min-h-screen flex flex-col justify-center items-center bg-white text-black px-6 pb-24">
         <div className="max-w-6xl w-full">
           <h3 className="text-4xl md:text-5xl text-center font-bold mb-12 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
@@ -1263,6 +1341,21 @@ const About = () => {
                 title: "Client Outreach Coordinator",
                 desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
               },
+<<<<<<< HEAD
+=======
+              {
+                src: Shubh,
+                name: "Shubh",
+                title: "Designer",
+                desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
+              },
+              {
+                src: Aryan,
+                name: "Aryan Toshniwal",
+                title: "Client Outreach Coordinator",
+                desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
+              },
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
             ].map((member, i) => (
               <motion.div
                 key={i}
@@ -1289,7 +1382,11 @@ const About = () => {
                     {member.name}
                   </h4>
                   <p className="text-red-400">{member.title}</p>
+<<<<<<< HEAD
                   <p className="text-sm">{member.desc}</p>
+=======
+                  <p className="text-black text-sm">{member.desc}</p>
+>>>>>>> 920e4a6121e8107538b40f5444f39153e7374795
                 </div>
               </motion.div>
             ))}

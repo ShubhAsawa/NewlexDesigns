@@ -117,27 +117,29 @@
 // src/data/portfolioData.js
 const portfolioProjects = [
   {
-    id: 1,
-    title: "Ramadevi Foods ",
-    category: "Food & Beverage",
-    subtitle: "Full Brand Identity Package",
-    tags: ["Packaging", "Branding", "Design"],
-    thumbnail: "https://picsum.photos/seed/ramadevi-thumb/600/400",
-    description:
-      "Earlier this year, we partnered with Ramadevi Foods to reimagine their packaging identity. Known for their authentic South Indian sweets, they wanted a visual language that balances heritage and modern retail appeal. The result was a colorful, authentic, and contemporary design that resonates with both traditional and urban audiences.",
-    goals:
-      "Create a consistent and appealing brand experience across packaging and marketing materials, conveying authenticity and quality.",
-    textBlock:
-      "The final designs reflect Ramadevi Foods’ commitment to heritage while giving it a contemporary retail-ready aesthetic. Patterns, typography, and colors were carefully selected to resonate with customers.",
-    person: {
-      name: "Kristy",
-      role: "Brand Designer",
-      image: "https://picsum.photos/seed/kristy/200/200",
-    },
-    images: Array.from({ length: 13 }).map(
-      (_, i) => `https://picsum.photos/seed/ramadevi${i + 1}/1600/1000`
-    ),
+  id: 1,
+  title: "Pawfect | Pet Food Brand Identity & Packaging",
+  category: "Food & Beverage",
+  subtitle: "Full Brand Identity Package",
+  tags: ["Packaging", "Branding", "Design"],
+  thumbnail: `/ProjectImages/Project01/Pawfect-project-01.jpg`,
+  description:
+    "Public relations is extremely important because it helps shape how people think, trust, and feel about a brand, organization, or individual. It builds a positive image, maintains reputation, and creates meaningful connections with the public, media, customers, and stakeholders. PR helps build credibility—not by ads or paid promotions, but through strategic communication, storytelling, transparency, and trust-building. When done right, PR increases brand value, handles negative situations smoothly, improves customer loyalty, and influences public perception in a powerful way. In today’s competitive world, where every opinion spreads fast through social media and online platforms, public relations is not just useful—it is necessary for long-term success and growth.",
+  goals:
+    "Public relations is extremely important because it helps shape how people think, trust, and feel about a brand, organization, or individual. It builds a positive image, maintains reputation, and creates meaningful connections with the public, media, customers, and stakeholders. PR helps build credibility—not by ads or paid promotions, but through strategic communication, storytelling, transparency, and trust-building. When done right, PR increases brand value, handles negative situations smoothly, improves customer loyalty, and influences public perception in a powerful way. In today’s competitive world, where every opinion spreads fast through social media and online platforms, public relations is not just useful—it is necessary for long-term success and growth.",
+  textBlock:
+    "Public relations is extremely important because it helps shape how people think, trust, and feel about a brand, organization, or individual. It builds a positive image, maintains reputation, and creates meaningful connections with the public, media, customers, and stakeholders. PR helps build credibility—not by ads or paid promotions, but through strategic communication, storytelling, transparency, and trust-building. When done right, PR increases brand value, handles negative situations smoothly, improves customer loyalty, and influences public perception in a powerful way. In today’s competitive world, where every opinion spreads fast through social media and online platforms, public relations is not just useful—it is necessary for long-term success and growth.",
+  person: {
+    name: "Kristy",
+    role: "Brand Designer",
+    image: "https://picsum.photos/seed/kristy/200/200",
   },
+  images: Array.from({ length: 18 }).map(
+  (_, i) => `/ProjectImages/Project01/Pawfect-project-${String(i + 1).padStart(2, "0")}.jpg`
+),
+
+},
+
   {
     id: 2,
     title: "ShopKit | E-Commerce Platform Redesign",

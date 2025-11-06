@@ -223,7 +223,6 @@
 
 // export default HeroSection;
 
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -235,14 +234,18 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative flex flex-col lg:flex-row items-center justify-between px-12 pt-2 pb-4 bg-white text-black overflow-hidden hero-custom-height">
+    <section className="relative flex flex-col lg:flex-row items-center justify-between px-4 md:px-10 bg-white text-black overflow-hidden hero-custom-height">
       {/* Left Content */}
-      <div className="relative z-10 max-w-xl text-left space-y-7">
-        <h1 className="text-4xl md:text-6xl font-bold">
-          Your <em className="italic text-red-600">creative team’s</em><br /> creative team™
+      <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center text-left space-y-6 lg:pr-8 h-full">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          Your{" "}
+          <em className="italic text-transparent bg-clip-text bg-gradient-to-r from-black to-[#E32225]">
+            creative team’s
+          </em>
+          <br /> creative team™
         </h1>
 
-        <p className="text-lg text-black">
+        <p className="text-sm sm:text-base md:text-lg text-black max-w-md">
           Scale your in-house creative team with top global talent powered by
           industry-leading AI workflows, delivering anything you can imagine fast
           and affordably.
@@ -255,32 +258,35 @@ const HeroSection = () => {
         </Link>
       </div>
 
-      {/* Right Side: Three Columns of Images */}
-      <div className="relative z-10 flex gap-4 mt-10 lg:mt-0">
-        {Object.entries(images).map(([row, imgs], colIdx) => (
-          <div
-            key={row}
-            className="overflow-hidden h-[400px] w-[180px]"
-          >
+      {/* Right Side Images */}
+      <div className="relative z-10 w-full lg:w-1/2 flex justify-center items-center h-full">
+        <div className="flex w-full h-[90vh] justify-center gap-4 overflow-hidden">
+          {Object.entries(images).map(([row, imgs], colIdx) => (
             <div
-              className={`flex flex-col ${
-                colIdx === 1 ? "animate-scrollDown" : "animate-scrollUp"
-              }`}
+              key={row}
+              className={`flex-1 overflow-hidden ${
+                colIdx === 1 ? "hidden sm:block" : ""
+              } ${colIdx === 2 ? "hidden lg:block" : ""}`}
             >
-              {[...imgs, ...imgs].map((img, idx) => (
-                <img
-                  key={`${row}-${idx}`}
-                  src={img}
-                  alt={`Hero Img ${idx + 1}`}
-                  className="w-full h-36 object-cover rounded-md mb-3"
-                />
-              ))}
+              <div
+                className={`flex flex-col h-full ${
+                  colIdx === 1 ? "animate-scrollDown" : "animate-scrollUp"
+                }`}
+              >
+                {[...imgs, ...imgs].map((img, idx) => (
+                  <img
+                    key={`${row}-${idx}`}
+                    src={img}
+                    alt={`Hero Img ${idx + 1}`}
+                    className="w-full h-40 object-cover rounded-md mb-3"
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
-      {/* Animation Keyframes */}
       <style>
         {`
           @keyframes scrollUp {
@@ -292,13 +298,15 @@ const HeroSection = () => {
             100% { transform: translateY(0); }
           }
           .animate-scrollUp {
-            animation: scrollUp 30s linear infinite;
+            animation: scrollUp 35s linear infinite;
           }
           .animate-scrollDown {
-            animation: scrollDown 30s linear infinite;
+            animation: scrollDown 35s linear infinite;
           }
           .hero-custom-height {
             min-height: 90vh;
+            display: flex;
+            align-items: center;
           }
         `}
       </style>

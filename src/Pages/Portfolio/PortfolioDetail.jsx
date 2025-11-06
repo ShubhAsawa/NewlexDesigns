@@ -1889,45 +1889,46 @@ const PortfolioDetail = () => {
     <section className="bg-white text-black overflow-x-hidden">
 
       {/* HERO SECTION */}
-      <div className="w-full relative bg-white px-0">
-        <motion.img
-          src={get(0)}
-          alt={`${project.title} hero`}
-          className="w-full h-[100vh] object-cover block"
-          initial={{ scale: 1.02 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.2 }}
-          loading="eager"
-        />
+<div className="w-full relative bg-white px-0">
+  <motion.img
+    src={get(0)}
+    alt={`${project.title} hero`}
+    className="w-full h-[100vh] object-cover block"
+    initial={{ scale: 1.02 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 1.2 }}
+    loading="eager"
+  />
 
-        {/* Overlay + Centered Text */}
-        <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-          <div className="w-full text-center">
-            <motion.p
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.12}
-              className="uppercase tracking-wider text-sm md:text-base bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent"
-            >
-              {project.category}
-            </motion.p>
+  {/* Overlay + Bottom Left Text */}
+  <div className="absolute inset-0 flex items-end justify-start">
+    <div className="p-10 md:p-20 text-left">
+      <motion.p
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        custom={0.12}
+        className="uppercase tracking-wider text-sm md:text-base text-white"
+      >
+        {project.category}
+      </motion.p>
 
-            <motion.h1
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.3}
-              className="mt-4 text-7xl md:text-5xl font-extrabold bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent"
-            >
-              {project.title}
-            </motion.h1>
-          </div>
-        </div>
+      <motion.h1
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        custom={0.3}
+        className="mt-3 text-5xl md:text-7xl font-extrabold text-white"
+      >
+        {project.title}
+      </motion.h1>
+    </div>
+  </div>
 
-        {/* Subtle dark overlay */}
-        <div className="absolute inset-0 bg-black/25 pointer-events-none" />
-      </div>
+  {/* Subtle dark overlay */}
+  {/* <div className="absolute inset-0 bg-black/40 pointer-events-none" /> */}
+</div>
+
 
       {/* INFO SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 gap-3">

@@ -118,7 +118,7 @@
 const portfolioProjects = [
   {
   id: 1,
-  title: "Pawfect | Pet Food Brand Identity & Packaging",
+  title: "Pawfect",
   category: "Food & Beverage",
   subtitle: "Full Brand Identity Package",
   tags: ["Packaging", "Branding", "Design"],
@@ -142,7 +142,7 @@ const portfolioProjects = [
 
   {
     id: 2,
-    title: "ShopKit | E-Commerce Platform Redesign",
+    title: "ShopKit",
     category: "Web Design & UX",
     subtitle: "Website Redesign",
     tags: ["UI/UX", "Web Redesign", "Conversion Optimization"],
@@ -164,7 +164,7 @@ const portfolioProjects = [
   },
   {
     id: 3,
-    title: "AppWorks | Mobile App UI Kit",
+    title: "AppWorks",
     category: "Mobile Design",
     subtitle: "UI Kit Design",
     tags: ["UI Kit", "Design System", "Mobile App"],
@@ -186,7 +186,7 @@ const portfolioProjects = [
   },
   {
     id: 4,
-    title: "Startup X | Brand Identity & Strategy",
+    title: "Startup X",
     category: "Branding",
     subtitle: "Brand Identity Package",
     tags: ["Identity Design", "Logo", "Strategy"],
@@ -208,7 +208,7 @@ const portfolioProjects = [
   },
   {
     id: 5,
-    title: "Insightly | Analytics Dashboard",
+    title: "Insightly",
     category: "SaaS Design",
     subtitle: "Dashboard Design",
     tags: ["Dashboard", "Data Visualization", "Product UI"],
@@ -230,7 +230,7 @@ const portfolioProjects = [
   },
   {
     id: 6,
-    title: "DataLabs | AI Proof-of-Concept Platform",
+    title: "DataLabs",
     category: "AI / Machine Learning",
     subtitle: "AI Prototype Platform",
     tags: ["AI", "Prototype", "Web App"],

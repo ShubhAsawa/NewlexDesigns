@@ -13,11 +13,11 @@ const Home = () => {
   return (
     <div className="bg-[#0e0e0e] text-white">
       <HomeHero />
-      <HomeGlow />      {/* ✅ Glowing photo section */}
       {<HomeContent />} {/* 👈 Keep your content here */}
       <HomePhoto />     {/* ✅ Scrolling photo section */}
       <ServicesOverview/>
       <HomeTestimonial />
+      <HomeGlow /> 
       {/* <HomeBlow /> */}
       <Newsletter />
     </div>

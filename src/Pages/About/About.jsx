@@ -1502,12 +1502,16 @@
 // /src/about/About.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import Yash from "../../assets/images/Yash.png";
-import Ishika from "../../assets/images/Ishika.png";
-import Vinit from "../../assets/images/Vinit.png";
-import Riya from "../../assets/images/Riya.png";
-import Shubh from "../../assets/images/Shubh.png";
-import Aryan from "../../assets/images/Aryan.png";
+import Sanika from "../../assets/images/Sanika.jpg";
+import Aryann from "../../assets/images/Aryann.jpg";
+import Ishika from "../../assets/images/Ishika.jpg";
+import shubhh from "../../assets/images/shubhh.jpg";
+import Riya from "../../assets/images/Riya.jpg";
+import Tanusha from "../../assets/images/Tanusha.jpg";
+import Nikita from "../../assets/images/Nikita.jpg";
+import Yash from "../../assets/images/Yash.jpg";
+// import Aryan from "../../assets/images/Aryan.png";
+
 import AboutText from "./AboutText";
 
 const fadeInUp = {
@@ -1532,7 +1536,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Meet the Team Behind Seyreon
+            Meet the Team Behind Newlexdesigns
           </motion.h1>
 
           <motion.p
@@ -1553,10 +1557,10 @@ const About = () => {
       <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-8 py-20 bg-white text-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Static Image */}
-          <div className="w-48 h-48 shrink-0 relative overflow-hidden">
+          <div className="w-60 h-60 shrink-0 relative overflow-hidden">
             <img
-              src={Yash}
-              alt="Yash Maheshwari"
+              src={Ishika}
+              alt="Ishika Maheshwari"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
@@ -1569,7 +1573,7 @@ const About = () => {
             variants={fadeInUp}
           >
             <h2 className="text-3xl font-bold bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
-              Yash Maheshwari
+              Ishika Maheshwari
             </h2>
             <p className="text-[#E32225] font-medium">Founder & CEO</p>
             <p>
@@ -1591,10 +1595,10 @@ const About = () => {
       <section className="w-full flex flex-col md:flex-row items-center justify-center gap-10 px-8 bg-white text-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Static Image */}
-          <div className="w-48 h-48 shrink-0 relative overflow-hidden">
+          <div className="w-60 h-60 shrink-0 relative overflow-hidden">
             <img
-              src={Ishika}
-              alt="Ishika Maheshwari"
+              src={shubhh}
+              alt="Shubh Asawa"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
@@ -1607,7 +1611,7 @@ const About = () => {
             variants={fadeInUp}
           >
             <h2 className="text-3xl font-bold bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
-              Ishika Maheshwari
+              Shubh Asawa
             </h2>
             <p className="text-[#E32225] font-medium">Co-Founder & CCO</p>
             <p>
@@ -1649,42 +1653,42 @@ const About = () => {
       <section className="w-full min-h-screen flex flex-col justify-center items-center bg-white text-black px-6 pb-24">
         <div className="max-w-6xl w-full">
           <h3 className="text-4xl md:text-5xl text-center font-bold mb-12 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
-            Together, We Are Seyreon
+            Together, We Are Newlexdesigns
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
             {[
               {
-                src: Vinit,
-                name: "Vinit Rajput",
+                src: Tanusha,
+                name: "Tanusha Rathi",
                 title: "Chief Solutions Engineer",
                 desc: "Vinit ensures every automation flows perfectly with logic and precision. From backend architecture to API orchestration, he turns ideas into functional systems that perform flawlessly and scale effortlessly.",
               },
               {
-                src: Riya,
-                name: "Riya Maheshwari",
+                src: Nikita,
+                name: "Nikita Bhuradiya",
                 title: "Dev & QA Engineer",
                 desc: "Riya develops and stress-tests our systems to meet the highest quality standards. With precision and persistence, she ensures your bots run smoothly in real-world use — bug-free and high-performing.",
               },
               {
-                src: Shubh,
-                name: "Shubh",
+                src: Riya,
+                name: "Riya Sharma",
                 title: "Designer",
                 desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
               },
               {
-                src: Aryan,
-                name: "Aryan Toshniwal",
+                src: Sanika,
+                name: "Sanika Kaminbar",
                 title: "Client Outreach Coordinator",
                 desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
               },
               {
-                src: Shubh,
-                name: "Shubh",
+                src: Yash,
+                name: "Yash Maheshwari",
                 title: "Designer",
                 desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
               },
               {
-                src: Aryan,
+                src: Aryann,
                 name: "Aryan Toshniwal",
                 title: "Client Outreach Coordinator",
                 desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
@@ -1692,7 +1696,7 @@ const About = () => {
             ].map((member, i) => (
               <motion.div
                 key={i}
-                className="relative overflow-hidden flex flex-col md:flex-row items-center md:items-start gap-6 p-6 rounded-xl border-2 border-[#E32225] bg-white text-black transition-all duration-300 hover:shadow-[0_0_20px_#E32225]"
+                className="relative overflow-hidden flex flex-col md:flex-row items-center md:items-start gap-5 p-8 rounded-xl border-2 border-[#E32225] bg-white text-black transition-all duration-300 hover:shadow-[0_0_20px_#E32225]"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -1707,7 +1711,7 @@ const About = () => {
                   <img
                     src={member.src}
                     alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover"
+                    className="w-40 h-40 rounded-full object-cover"
                   />
                 </div>
                 <div className="z-10">

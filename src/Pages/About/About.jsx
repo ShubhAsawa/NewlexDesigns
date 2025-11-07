@@ -1588,7 +1588,7 @@ const About = () => {
       </section>
 
       {/* CO-FOUNDER SECTION */}
-      <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 px-8 bg-white text-black">
+      <section className="w-full flex flex-col md:flex-row items-center justify-center gap-10 px-8 bg-white text-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Static Image */}
           <div className="w-48 h-48 shrink-0 relative overflow-hidden">
@@ -1677,6 +1677,18 @@ const About = () => {
                 title: "Client Outreach Coordinator",
                 desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
               },
+              {
+                src: Shubh,
+                name: "Shubh",
+                title: "Designer",
+                desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
+              },
+              {
+                src: Aryan,
+                name: "Aryan Toshniwal",
+                title: "Client Outreach Coordinator",
+                desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
+              },
             ].map((member, i) => (
               <motion.div
                 key={i}
@@ -1688,7 +1700,7 @@ const About = () => {
                 variants={fadeInUp}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0 0 20px #E32225",
+                  boxShadow: "0 0 20px #660305ff",
                 }}
               >
                 <div className="z-10 flex-shrink-0">

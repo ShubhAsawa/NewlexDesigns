@@ -392,7 +392,7 @@ import { NavLink } from "react-router-dom";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Portfolio", path: "/portfolio" }, // ✅ Portfolio added
+  { name: " Our Work", path: "/Ourwork" }, // ✅ Portfolio added
   // { name: "Pricing", path: "/pricing" },
   { name: "Contact Us", path: "/contact" },
   { name: "About Us", path: "/about" },

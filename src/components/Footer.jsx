@@ -255,7 +255,7 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/portfolio" className="hover:text-[#E32225] transition">
-                Portfolio
+                Work
               </Link>
             </li>
             {/* <li>

@@ -1,9 +1,9 @@
 // src/Pages/Portfolio/Portfolio.jsx
 import React from "react";
-import PortfolioHero from "./PortfolioHero";
-import PortfolioGrid from "./PortfolioGrid";
-import PortfolioGallery from "./PortfolioGallery";
-import PortfolioCTA from "./PortfolioCTA";
+import PortfolioHero from "./OurwokHero";
+import PortfolioGrid from "./OurworkGrid";
+import PortfolioGallery from "./OurworkGallery";
+import PortfolioCTA from "./OurworkCTA";
 
 const Portfolio = () => {
   return (

@@ -300,13 +300,13 @@ import MusicPlayer from "./components/MusicPlayer"; // 🎵 MusicPlayer
 // Pages
 import Home from "./Pages/Home/home";
 import Services from "./Pages/Services/Services";
-import Pricing from "./Pages/Pricing/Pricing";
+// import Pricing from "./Pages/Pricing/Pricing";
 import Contact from "./Pages/Contacts/Contact";
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
 import SingleBlog from "./Pages/Blog/SingleBlog";
-import Portfolio from "./Pages/Portfolio/Portfolio"; // ✅ Portfolio Grid Page
-import PortfolioDetail from "./Pages/Portfolio/PortfolioDetail"; // ✅ NEW: Portfolio detail page
+import Ourwork from "./Pages/Ourwork/Ourwork.jsx"; // ✅ Portfolio Grid Page
+import OurworkDetail from "./Pages/Ourwork/OurworkDetail.jsx"; // ✅ NEW: Portfolio detail page
 
 // Service Detail Pages
 import BrandIdentity from "./Pages/Services/BrandIdentity";
@@ -378,15 +378,15 @@ const AppWrapper = () => {
                 path="/services/PackagingDesign"
                 element={<PackagingDesign />}
               />
-              <Route path="/pricing" element={<Pricing />} />
+              {/* <Route path="/pricing" element={<Pricing />} /> */}
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:id" element={<SingleBlog />} />
 
               {/* ✅ Portfolio Routes */}
-              <Route path="/portfolio" element={<Portfolio />} /> 
-              <Route path="/portfolio/:id" element={<PortfolioDetail />} /> {/* ✅ NEW Detail page */}
+              <Route path="/Ourwork" element={<Ourwork />} /> 
+              <Route path="/Ourwork/:id" element={<OurworkDetail />} /> {/* ✅ NEW Detail page */}
 
               {/* Legal Pages */}
               <Route path="/why-us" element={<WhyUs />} />

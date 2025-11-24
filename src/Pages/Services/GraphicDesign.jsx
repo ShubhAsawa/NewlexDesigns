@@ -178,11 +178,12 @@
 // export default GrowthEngagement;
 
 
+// /pages/AIAssistant.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const GraphicDesign = () => {
+const BrandIdentity = () => {
   return (
     <div className="w-full bg-white">
 
@@ -240,7 +241,7 @@ const GraphicDesign = () => {
 
       {/* RELATED PROJECTS SECTION */}
       <section className="w-full bg-white py-24 px-6">
-        <h2 className="text-center text-5xl md:text-6xl font-extrabold text-[#E32225] mb-16">
+        <h2 className="text-5xl md:text-6xl bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent font-extrabold flex items-center justify-center gap-2 relative z-10 mb-12">
           More Work You’ll Love
         </h2>
 
@@ -277,4 +278,4 @@ const GraphicDesign = () => {
   );
 };
 
-export default GraphicDesign;
+export default BrandIdentity;

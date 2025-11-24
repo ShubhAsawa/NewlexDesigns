@@ -11,22 +11,22 @@ const HomeContent = () => {
 
   const [isTyping, setIsTyping] = useState(false);
   const [typedText, setTypedText] = useState("");
-  const fullParagraph = `We're not here to play buzzword bingo — we build real, working systems tailored to your business. From solopreneurs to scaling teams, we create solutions that automate growth, streamline operations, and scale with precision. With Seyreon, you're not just getting another AI tool — you're getting a system that works while you sleep, backed by logic, data, and results.`;
+  const fullParagraph = `We’re not here to throw fancy words around. we create real, meaningful design that moves your business forward. From solo founders to growing teams, we craft brand and design solutions that enhance visibility, build trust, and support long-term growth. With NewlexDesigns, you’re not just getting another creative service , you’re getting a partner dedicated to elevating your brand with strategy, intention, and quality that works even when you’re not looking.`;
 
   const [processActiveIndex, setProcessActiveIndex] = useState(-1);
 
   const processSteps = [
     "Book a Call",
     "Consultation",
-    "Development",
-    "Integration",
+    "Design & Development",
+    "Delivery & Launch",
   ];
 
   const stepDescriptions = [
-    "Jump on a call and share what you're trying to automate or solve.",
-    "We strategize and suggest the most efficient automation path.",
-    "We build out your custom system with care and speed.",
-    "We connect it to your tools, test, and deploy it live.",
+    "Schedule a call and tell us what you want to create, improve, or redesign for your brand.",
+    "We understand your goals, review your brand needs, and recommend the most effective creative direction.",
+    "We craft your visuals, identity, or digital experience with precision, creativity, and attention to detail.",
+    "We finalize everything, prepare your files, and ensure your new design integrates smoothly across your platforms.",
   ];
 
   const stepIcons = [
@@ -108,11 +108,11 @@ const HomeContent = () => {
           id="what-is-seyreon"
           className="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent animate-shimmer"
         >
-          What is Seyreon?
+         What is NewlexDesigns?
         </h2>
 
         <h3 className="text-2xl md:text-3xl text-gray-700 font-medium mb-6">
-          We are <span className="text-black">not an AI</span>{" "}
+          We are <span className="text-black">not an design </span>{" "}
           <span
             className={`inline-block transition-opacity duration-500 ${
               fade ? "opacity-100" : "opacity-0"
@@ -120,14 +120,11 @@ const HomeContent = () => {
           >
             {words[currentWordIndex]}
           </span>{" "}
-          company — we’re your automation partner.
+           , we’re your creative partner.
         </h3>
 
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          Seyreon builds intelligent automation systems that work while you
-          sleep — AI chatbots, voice assistants, CRMs, and custom workflows that
-          scale your business without the manual grind. Whether it's lead gen,
-          support, or engagement — we help you automate and dominate.
+          NewLexDesigns builds powerful brand experiences that work for you around the clock — from complete brand identities and logo systems to packaging, UI/UX, graphics, and marketing visuals that help your business grow effortlessly. Whether you’re building trust, visibility, or engagement, we craft designs that elevate your brand and make you stand out.
         </p>
       </section>
 
@@ -140,20 +137,20 @@ const HomeContent = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[{
             icon: <Bot className="w-10 h-10 text-yellow-400 mx-auto mb-4" />,
-            title: "AI Assistants",
-            desc: "Smart bots that talk, listen, qualify leads, and support customers 24/7."
+            title: "Brand Identity Systems",
+            desc: "Strategic brand foundations that shape how your audience sees, trusts, and remembers you across every touchpoint."
           }, {
             icon: <CalendarClock className="w-10 h-10 text-yellow-400 mx-auto mb-4" />,
-            title: "Smart Scheduling",
-            desc: "Let your users book calls instantly through integrated bots."
+            title: "Creative Design & Visual Content",
+            desc: "High-quality graphics, layouts, and marketing creatives that elevate your brand and keep your audience engaged."
           }, {
             icon: <Zap className="w-10 h-10 text-yellow-400 mx-auto mb-4" />,
-            title: "Automation Workflows",
-            desc: "CRMs, Sheets, GHL, email — we connect it all to run on autopilot."
+            title: "Website & UI/UX Experiences",
+            desc: "Modern, user-friendly digital experiences designed to convert visitors into loyal customers."
           }, {
             icon: <WandSparkles className="w-10 h-10 text-yellow-400 mx-auto mb-4" />,
-            title: "Custom Systems",
-            desc: "Need something unique? We design tailored automations from scratch."
+            title: "Custom Creative Solutions",
+            desc: "Every brand is different so we craft tailored design solutions that fit your business goals, style, and vision."
           }].map((card, idx) => (
             <div
               key={idx}

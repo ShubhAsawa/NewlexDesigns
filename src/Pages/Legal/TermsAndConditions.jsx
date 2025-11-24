@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
             {...fadeInUp}
             transition={{ ...fadeInUp.transition, delay: 0.2 }}
           >
-            Everything you need to know — written like a human, not a lawyer.
+            Everything you need to know — clearly explained, human to human.
           </motion.p>
         </div>
       </section>
@@ -35,37 +35,37 @@ const TermsAndConditions = () => {
           {
             title: "1. What You’re Getting",
             content:
-              "We build powerful, custom automation systems tailored to your business. From AI assistants to full-scale backend workflows — you're getting a solution designed to save time, boost performance, and scale with you.",
+              "We create high-quality, custom design solutions tailored to your brand. From complete identities to packaging, graphics, and digital experiences — you’re getting design work built to elevate your business and grow with you.",
           },
           {
             title: "2. How We Work Together",
             content:
-              "Seyreon is a collaboration. We rely on your input, feedback, and clarity to build something that truly fits your needs. You provide the access, we bring the tech — and together, we automate smart.",
+              "NewlexDesigns is a collaboration. Your clarity, feedback, and direction help us craft the visuals that best represent your brand. You share the inputs — we bring the creativity, strategy, and execution.",
           },
           {
             title: "3. What You Own",
             content:
-              "Once it’s built and approved, it’s yours. The workflows, bots, logic — everything. You can run it, modify it, or grow it. No lock-ins. No nonsense.",
+              "Once your final designs are approved, they’re yours. The brand assets, visuals, files, and guidelines belong fully to you. No lock-ins, no complications — just complete ownership and freedom.",
           },
           {
             title: "4. Changes & Revisions",
             content:
-              "Need tweaks? No problem. Most packages include 1-2 rounds of feedback. If you need big changes beyond the original scope, we’ll quote it fairly — and let you know before anything’s billed.",
+              "Need adjustments? Absolutely. Most design packages include 1–2 rounds of feedback. If major changes go beyond the original scope, we’ll quote them fairly and always inform you before anything is charged.",
           },
           {
             title: "5. Refund Policy",
             content:
-              "We start working fast, which means we also lock in quickly. So while we don’t offer refunds after we begin, we do promise this: we’ll deliver something you’re genuinely proud of.",
+              "We begin working quickly, which means time and resources get allocated immediately. For that reason, we don’t offer refunds once the project starts — but we do commit to delivering work you’re genuinely proud of.",
           },
           {
             title: "6. Respecting Your Data",
             content:
-              "We treat your data like it’s our own — securely, privately, and only accessed for setup and testing. Full compliance. Full transparency. For more, read our Privacy Policy.",
+              "Your information is handled securely, privately, and only used for project purposes. No unnecessary storage, no misuse — full transparency at every step. For details, visit our Privacy Policy.",
           },
           {
             title: "7. Need Support?",
             content:
-              "We’re here when you need us. Whether it’s technical help, new features, or just questions about your system — email us anytime at support@seyreon.com.",
+              "We’re here to help. Whether you need design updates, new assets, or have questions about your project, reach out anytime at support@newlexdesigns.com",
           },
         ].map((section, index) => (
           <motion.div

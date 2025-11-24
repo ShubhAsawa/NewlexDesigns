@@ -47,8 +47,7 @@ const HeroSection = () => {
           Welcome to Your Client Portal
         </h1>
         <p className="text-lg md:text-2xl text-red-300 font-medium">
-          Track your project status, deliverables, deadlines, and more — all in
-          one place.
+          Access your project progress, files, timelines, and updates, everything you need, organized in one place.
         </p>
       </motion.div>
     </section>

@@ -315,7 +315,7 @@ const Servicetext = () => {
             NewlexDesigns
           </h1>
           <p className="mt-4 sm:mt-6 text-gray-700 text-base sm:text-lg md:text-xl font-medium">
-            Where creativity orbits innovation — connecting brands, creators, and design excellence.
+            Where creativity meets innovation, shaping brands from unseen to unforgettable.
           </p>
         </motion.div>
       </div>

@@ -1545,7 +1545,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            The minds building the future of AI automations
+           The creative minds shaping meaningful brands and exceptional design experiences.
           </motion.p>
         </div>
       </section>
@@ -1577,14 +1577,9 @@ const About = () => {
             </h2>
             <p className="text-[#E32225] font-medium">Founder & CEO</p>
             <p>
-              As the Founder and CEO of Seyreon, I am committed to driving
-              innovation and excellence in AI and automation. With a deep
-              passion for technology and a focus on empowering businesses, I
-              lead our team to develop cutting-edge chatbot solutions that
-              enhance efficiency and user engagement. My mission is to create
-              impactful AI solutions that help our clients streamline operations
-              and unlock new opportunities for growth in an ever-evolving
-              digital landscape.
+              As the Founder and CEO of NewlexDesigns, I am dedicated to shaping meaningful design that elevates brands and inspires creativity. With a passion for visual storytelling and a commitment to excellence, I lead our team in crafting identities, packaging, graphics, and digital experiences that leave a lasting impact.
+              My mission is to help businesses express who they are with clarity, confidence, and unforgettable design transforming ideas into visuals that truly resonate in a constantly evolving creative world.
+
             </p>
             <p className="italic text-red-400">“If you think it, do it.”</p>
           </motion.div>
@@ -1615,13 +1610,8 @@ const About = () => {
             </h2>
             <p className="text-[#E32225] font-medium">Co-Founder & CCO</p>
             <p>
-              As the Co-Founder and Chief Creative Officer of Seyreon, I am
-              dedicated to bringing innovative design solutions to life. With a
-              strong passion for creativity and a keen eye for detail, I lead
-              our design initiatives to ensure that every project captures the
-              essence of our clients’ brands. My mission is to craft visually
-              compelling experiences that engage audiences and elevate brand
-              identities in a competitive landscape.
+              As the Co-Founder and Chief Creative Officer of NewlexDesigns, I am committed to turning ideas into meaningful visual experiences. Guided by a deep passion for creativity and an eye for refined detail, I lead our creative direction to ensure every project reflects the true essence of the brands we work with.
+              My mission is to shape designs that not only look beautiful but also communicate with purpose — crafting memorable identities, engaging visuals, and impactful experiences that help brands stand out in a competitive world.
             </p>
           </motion.div>
         </div>
@@ -1640,11 +1630,7 @@ const About = () => {
             Our Mission
           </h3>
           <p className="text-lg leading-relaxed">
-            At Seyreon, our mission is to create intelligent systems that don't
-            just automate — they empower. We believe AI should enhance
-            creativity, boost human potential, and unlock seamless experiences
-            across every business touchpoint. We're here to redefine what’s
-            possible.
+            At NewlexDesigns, our mission is to create meaningful design that inspires, empowers, and elevates. We believe creativity should strengthen identity, enhance human connection, and bring clarity to every brand touchpoint. We’re here to transform ideas into unforgettable experiences and redefine what thoughtful design can achieve.
           </p>
         </div>
       </motion.section>
@@ -1661,37 +1647,37 @@ const About = () => {
                 src: Tanusha,
                 name: "Tanusha Rathi",
                 title: "Chief Solutions Engineer",
-                desc: "Vinit ensures every automation flows perfectly with logic and precision. From backend architecture to API orchestration, he turns ideas into functional systems that perform flawlessly and scale effortlessly.",
+                desc: "Tanusha ensures every creative project comes together with structure, clarity, and precision. She bridges strategy and design by shaping the visual framework, refining workflows, and overseeing seamless execution.",
               },
               {
                 src: Nikita,
                 name: "Nikita Bhuradiya",
-                title: "Dev & QA Engineer",
-                desc: "Riya develops and stress-tests our systems to meet the highest quality standards. With precision and persistence, she ensures your bots run smoothly in real-world use — bug-free and high-performing.",
+                title: "Creative Director",
+                desc: "Nikita leads the creative direction at NewlexDesigns with a strong eye for detail and visual storytelling. She guides the design team, refines concepts, and ensures every project is crafted with quality, clarity, and purpose, transforming ideas into impactful and memorable brand experiences.",
               },
               {
                 src: Riya,
                 name: "Riya Sharma",
-                title: "Designer",
-                desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
+                title: "Branding & Identity Designer",
+                desc: "Riya brings thoughtful creativity to every brand she builds. From crafting logos to shaping complete identity systems, she ensures each design feels intentional, memorable, and visually striking. Her work transforms ideas into cohesive brand experiences that leave a lasting impression.",
               },
               {
                 src: Sanika,
                 name: "Sanika Kaminbar",
-                title: "Client Outreach Coordinator",
-                desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
+                title: "Content & Communication Strategist",
+                desc: "Sanika shapes the voice and storytelling of NewlexDesigns. She crafts clear, engaging content and ensures every message aligns with the brand’s vision. From client communication to visual narrative, she helps create meaningful connections and sets the tone for strong, lasting relationships.",
               },
               {
                 src: Yash,
                 name: "Yash Maheshwari",
-                title: "Designer",
-                desc: "Shubh adds visual flair to every project. Whether it's UI design, branding, or animations — his creativity ensures every Seyreon experience looks stunning and feels intuitive.",
+                title: "Client Relations & Coordinator",
+                desc: "Yash ensures every client interaction begins with clarity, trust, and a smooth experience. He manages communication, coordinates project details, and keeps workflows organized from start to finish.",
               },
               {
                 src: Aryann,
                 name: "Aryan Toshniwal",
                 title: "Client Outreach Coordinator",
-                desc: "Aryan is the voice of Seyreon to the outside world. He handles outreach, client onboarding, and ensures every new relationship begins with clarity, energy, and excitement.",
+                desc: "Aryan represents NewlexDesigns to the outside world with clarity and confidence. He manages outreach, connects with potential clients, and ensures every new relationship starts smoothly and professionally.",
               },
             ].map((member, i) => (
               <motion.div

@@ -88,7 +88,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Powering Bold Ideas with Strategic Technology
+          Where Creativity Meets Purpose
         </motion.h1>
 
         <motion.p
@@ -97,8 +97,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          We build intelligent automation systems that grow your business, save
-          time, and streamline operations — all with zero manual effort.
+          We design clear, intelligent brand experiences that strengthen your identity and connect you with the people who matter most.
         </motion.p>
       </div>
     </section>

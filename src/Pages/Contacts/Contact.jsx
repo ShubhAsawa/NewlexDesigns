@@ -778,7 +778,7 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Contact Seyreon
+          Contact NewlexDesigns
         </motion.h1>
 
         <motion.p
@@ -787,8 +787,7 @@ const Contact = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Let’s connect and build something that works while you sleep. Fill out
-          the form and we’ll get back to you within 24 hours.
+          Let’s connect and create something extraordinary together. Fill out the form and we’ll get back to you within 24 hours.
         </motion.p>
       </section>
 
@@ -840,7 +839,7 @@ const Contact = () => {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="+91..."
+                placeholder=""
                 className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 text-black focus:outline-none focus:ring focus:ring-red-500"
               />
             </div>
@@ -858,16 +857,18 @@ const Contact = () => {
                 className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 text-black"
               >
                 <option value="">-- Select --</option>
-                <option value="AI Assistant (Chat / Call)">
-                  AI Assistant (Chat / Call)
+                <option value="Full Brand Identity">
+                  Full Brand Identity
                 </option>
-                <option value="Business Automation Workflows">
-                  Business Automation Workflows
+                <option value="Logo Design">
+                  Logo Design
+                </option>           
+                <option value="Packaging Design">
+                  Packaging Design
                 </option>
-                <option value="Referral / Loyalty System">
-                  Referral / Loyalty System
+                <option value="Graphic Design">
+                  Graphic Design 
                 </option>
-                <option value="Custom System">Custom System</option>
                 <option value="Other (Type Below)">Other (Type Below)</option>
               </select>
             </div>

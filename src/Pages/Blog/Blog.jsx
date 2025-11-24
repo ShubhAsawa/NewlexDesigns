@@ -388,7 +388,7 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Insights from the Seyreon Team
+            Insights from the NewlexDesigns Team
           </motion.h1>
 
           <motion.p
@@ -397,8 +397,7 @@ const Blog = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            We share lessons, breakthroughs, and behind-the-scenes from building
-            AI, automations, and the future of business tech.
+            Explore creative lessons, design discoveries, and behind-the-scenes stories from our journey of shaping brands, crafting visuals, and building unforgettable design experiences.
           </motion.p>
         </div>
       </section>

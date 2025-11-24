@@ -238,17 +238,15 @@ const HeroSection = () => {
       {/* Left Content */}
       <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center text-left space-y-6 lg:pr-8 h-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          Your{" "}
+          A Creative{" "}
           <em className="italic text-transparent bg-clip-text bg-gradient-to-r from-black to-[#E32225]">
-            creative team’s
+            Studio Built for
           </em>
-          <br /> creative team™
+          <br /> Ambitious Brands
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-black max-w-md">
-          Scale your in-house creative team with top global talent powered by
-          industry-leading AI workflows, delivering anything you can imagine fast
-          and affordably.
+          At NewLexDesigns, we craft meaningful brand identities, captivating visuals, and standout digital experiences, designed to elevate your business and leave a lasting impression.
         </p>
 
         <Link to="/contact">

@@ -191,7 +191,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaFacebook,
-  FaReddit,
+  FaPinterest,
   FaTwitter,
   FaEnvelope,
   FaPhoneAlt,
@@ -224,7 +224,7 @@ const Footer = () => {
               className="h-[34px] w-auto"
             />
           </Link>
-          <p className="text-gray-600">Your AI Automation Partner</p>
+          <p className="text-gray-600">Unseen to unforgetable</p>
           <div className="flex items-start space-x-2 text-gray-600">
             <FaMapMarkerAlt className="mt-1 text-yellow-400" />
             <span>India, New Delhi</span>
@@ -334,13 +334,14 @@ const Footer = () => {
             >
               <FaFacebook />
             </a>
+            
             <a
-              href="https://www.reddit.com/user/newlexdesigns/"
+              href="https://in.pinterest.com/Newlexdesigns/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-[#E32225] transition"
             >
-              <FaReddit />
+              <FaPinterest />
             </a>
             <a
               href="https://x.com/newlexdesigns"

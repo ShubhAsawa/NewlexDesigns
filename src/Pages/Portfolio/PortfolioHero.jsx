@@ -11,7 +11,7 @@ const PortfolioHero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        My Creative Portfolio
+        My Creative Work
       </motion.h1>
 
       <motion.p
@@ -20,7 +20,7 @@ const PortfolioHero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        A collection of my best work & projects
+       A showcase of refined design, crafted projects, and meaningful brand transformations.
       </motion.p>
     </section>
   );

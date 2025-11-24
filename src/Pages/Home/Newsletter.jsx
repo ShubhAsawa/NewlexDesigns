@@ -78,7 +78,7 @@ const Newsletter = () => {
           Join Our Newsletter
         </h3>
         <p className="text-gray-600 mb-10 text-base md:text-lg">
-          We don’t spam. We don’t sell your data. Just pure automation goodness.
+          We don’t share your data. Just valuable insights, creative inspiration, and branding tips to help your business grow.
         </p>
 
         <div className="w-full max-w-xl mx-auto min-h-[60px]">

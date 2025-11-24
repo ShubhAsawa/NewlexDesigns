@@ -36,15 +36,10 @@ const InfoSection = () => {
           Your Dedicated Project Hub
         </h2>
         <p className="text-lg leading-relaxed mb-4 text-gray-700">
-          This secure Client Portal is built exclusively for Seyreon clients to
-          access real-time updates and key information about their ongoing
-          projects. Whether you're tracking progress, reviewing deliverables, or
-          checking your timeline — everything is available in one place.
+          This secure Client Portal is designed exclusively for NewlexDesigns clients to access real-time updates and essential information about their ongoing projects. Whether you're tracking progress, reviewing deliverables, or checking your timeline, everything you need is organized in one place.
         </p>
         <p className="text-lg leading-relaxed mb-4 text-gray-700">
-          As a client, you’ll be able to view your project summary, deadlines,
-          payment status, shared links (Notion, Google Drive, Portal page), and
-          any important updates posted by our team — all updated live.
+         As a client, you can view your project summary, deadlines, payment status, shared links (Notion, Google Drive, project pages), and any important updates posted by our team — all updated in real time.
         </p>
         <p className="text-lg leading-relaxed font-medium text-black mt-6">
           To continue, log in using your unique{" "}

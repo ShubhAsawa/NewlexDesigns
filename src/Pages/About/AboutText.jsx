@@ -264,19 +264,16 @@ const AboutText = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
             Together, <span className="text-[#E32225]">we craft</span> designs{" "}
             <span className="italic font-semibold text-gray-700">
-              that speak to every sense.
+              that connect on every level.
             </span>
           </h2>
 
           <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-            At <span className="font-semibold text-[#E32225]">Studio Six F</span>, creativity has no borders.
-            Designers, artists, and thinkers from around the world collaborate to
-            transform ideas into meaningful visuals.
+            At <span className="font-semibold text-[#E32225]">NewlexDesigns</span>, creativity knows no boundaries. Designers, artists, and storytellers collaborate to turn ideas into visually powerful and emotionally resonant experiences.
           </p>
 
           <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
-            From the subtle texture of packaging to the bold identity of a brand,
-            we design experiences that connect emotionally and visually.
+            From the refined details of packaging to the bold presence of a full brand identity, we shape design moments that are felt, remembered, and truly unforgettable.
           </p>
         </div>
       </div>

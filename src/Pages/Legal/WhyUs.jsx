@@ -369,11 +369,10 @@ const WhyUs = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Why Work With Seyreon
+            Why Work With NewlexDesigns
           </h1>
           <p className="text-lg md:text-2xl text-red-300 font-medium">
-            We don’t just build bots — we build systems that give you back your
-            time, your focus, and your freedom.
+            We don't just design visuals — we create meaningful brand experiences that give you clarity, confidence, and the space to grow your business.
           </p>
         </motion.div>
       </section>
@@ -381,33 +380,33 @@ const WhyUs = () => {
       {/* DIFFERENTIATORS */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
-          We’re Not Just Another Automation Agency
+         We’re Not Another Design Team. We’re Your Creative Partner.
         </h2>
         <div className="grid md:grid-cols-3 gap-10 text-left">
           {[
             {
-              title: "Systems That Work While You Sleep",
-              text: "We build automation that runs 24/7 — qualifying leads, booking calls, sending follow-ups — without lifting a finger.",
+              title: "Design That Works Even When You Don’t",
+              text: "We create brand and visual systems that stay consistent across every platform — keeping your presence strong, professional, and unforgettable around the clock.",
             },
             {
-              title: "A Tech Stack That Talks to Each Other",
-              text: "We blend tools like Make, Voiceflow, GHL, WhatsApp, OpenAI, and Google — into one seamless brain that runs your ops.",
+              title: "A Creative Ecosystem That Flows Together",
+              text: "Your branding, packaging, graphics, and digital experiences work as one seamless identity — clear, cohesive, and instantly recognizable.",
             },
             {
-              title: "No More Manual Bottlenecks",
-              text: "Your team shouldn't be copy-pasting leads, sending reminders, or chasing reviews. We eliminate busywork for good.",
+              title: "No More Creative Bottlenecks",
+              text: "Your team shouldn’t struggle with mismatched visuals, outdated designs, or unclear brand assets. We bring structure, clarity, and consistency to everything.",
             },
             {
               title: "Launch in Days, Not Months",
-              text: "Our systems are lean and fast — no bloated builds or endless back-and-forth. We move fast and ship sharp.",
+              text: "Our process is lean, fast, and focused — no unnecessary delays, no endless revisions. We move with precision and deliver with impact.",
             },
             {
               title: "Human Support, Always",
-              text: "You’ll have real humans behind your automation — guiding you, tweaking, evolving. We’re here even after go-live.",
+              text: "Behind every design is a real team that listens, guides, and collaborates. We stay with you beyond delivery to refine, improve, and evolve.",
             },
             {
-              title: "Designed for Founders",
-              text: "Every system we build is meant to reduce your stress, give you dashboards, alerts, and data that makes sense to *you*.",
+              title: "Built for Founders",
+              text: "Every design system we create is made to reduce stress, provide clarity, and give you visuals, guidelines, and brand assets that make sense for your business.",
             },
           ].map((item, index) => (
             <motion.div
@@ -430,17 +429,17 @@ const WhyUs = () => {
       {/* TRUST-BUILDING SECTION */}
       <section className="py-20 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-br from-black to-[#E32225] bg-clip-text text-transparent">
-          What Happens When Automation Just… Works?
+         What Happens When Great Design Just… Works?
         </h2>
         <p className="text-lg leading-relaxed">
-          ✦ Your team focuses on growth instead of tasks.
+          ✦ Your team focuses on growth instead of fixing visuals or redoing assets.
           <br />
-          ✦ Your users get faster replies, smoother experiences.
+          ✦ Your audience gets clearer messaging, stronger branding, and smoother experiences.
           <br />
-          ✦ Your business scales without scaling headaches.
+          ✦ Your business grows with confidence — without design confusion or inconsistency.
           <br />
           <br />
-          That’s what we bring — clarity, speed, and momentum.
+          That’s what we bring: clarity, impact, and creative momentum.
         </p>
       </section>
 
@@ -454,17 +453,17 @@ const WhyUs = () => {
             {
               name: "Healthcare Startup",
               result:
-                "Built an AI call assistant that qualified 300+ leads/month — no agents required.",
+                "A complete brand identity refresh and packaging redesign increased trust and boosted patient engagement across all digital touchpoints.",
             },
             {
               name: "Real Estate Brand",
               result:
-                "Automated WhatsApp bot booked 80+ viewings/month and synced with Google Calendar.",
+                "A modern website redesign with clear visuals and strong UI/UX increased property inquiries and improved user navigation significantly.",
             },
             {
-              name: "Ecom Founder",
+              name: "E-commerce Founder",
               result:
-                "Referral system + loyalty engine brought 40% more repeat purchases within 6 weeks.",
+                "A new visual identity, product packaging set, and social media design system increased repeat purchases by 40% within six weeks.",
             },
           ].map((item, index) => (
             <motion.div
@@ -491,19 +490,19 @@ const WhyUs = () => {
           {[
             {
               title: "Transparency",
-              text: "No hidden costs. No confusion. We’re open about what’s possible and what’s not — always.",
+              text: "Clear communication, honest expectations, and no hidden details. You always know what we’re creating, why it matters, and how it supports your brand.",
             },
             {
               title: "Speed with Quality",
-              text: "We don’t drag timelines. But we never rush what matters. We balance launch speed with performance.",
+              text: "We move fast without compromising craftsmanship. Every design is thoughtful, refined, and delivered with the intention to make your brand unforgettable.",
             },
             {
               title: "Adaptability",
-              text: "Tech moves fast — and so do we. Every system we build is ready to evolve with your needs.",
+              text: "Design trends evolve — and so do we. Every system, identity, and visual we create is built to stay relevant, flexible, and ready to grow with your brand.",
             },
             {
               title: "Client-First Thinking",
-              text: "We’re not here to upsell. We’re here to build something useful. We care more about value than vanity.",
+              text: "We don’t push unnecessary services or fancy extras. We focus on what brings real value, real clarity, and real results for your business.",
             },
           ].map((item, index) => (
             <motion.div
